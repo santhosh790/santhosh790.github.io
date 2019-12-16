@@ -1,11 +1,11 @@
 ---
-title: 'Future Blog Post'
-date: 2199-01-01
-permalink: /posts/2012/08/blog-post-4/
+title: 'Introduction to Theano - A quick guide'
+date: 2019-01-01
+permalink: https://myresearchworks.wordpress.com/2019/12/13/introduction-on-theano-a-quick-guide/
 tags:
-  - cool posts
-  - category1
-  - category2
+  - Data Science
+  - Theano
+  - Deep Learning
 ---
 
-This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`. 
+This post introduces Theano as a quick guide for developers 
