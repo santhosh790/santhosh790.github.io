@@ -84,9 +84,9 @@ author:
   avatar           : "profile.png"
   bio              : "A researcher, developer and creator"
   location         : "India"
-  employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  employer         : "Relevance Lab Pvt. Ltd."
+  pubmed           : 
+  googlescholar    : 
   email            : "santhoshramuk@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              : 
@@ -115,7 +115,8 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-
+  anaconda         : "https://anaconda.org/santhosh790"
+  blogsite         : "https://myresearchworks.wordpress.com"
 
 # Reading Files
 include:
