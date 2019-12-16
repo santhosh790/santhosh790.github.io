@@ -11,30 +11,37 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* H.S.C in Govt. Hr. Sec. School, Sathuvachari, TN, 2007, **88%**
+* M.S. in Software Engineering, VIT, Vellore, 2012, **9.22/10**
+* Ph.D in Information Technology, VIT, Vellore, 2020 (expected - Thesis Submitted)
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Jul 2014 - Present: Research Scholar
+  * VIT, Vellore
+  * Rumor identification and control in Online Social Networks
+  * Supervisor: Dr. L. D. Dhinesh Babu
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Apr 2016 - Present: Team Lead in AEM Development
+  * Relevance Lab Pvt Ltd
+
+* Sep 2014 - Apr 2016: Associate L2 in AEM Development
+  * Sapient Technologies
+
+* Dec 2012 to Aug 2014: Programmer Analyst in AEM Development
+  * Cognizant Technologies
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Java
+* Python
+  * pandas
+  * numpy
+  * Theano
+* AEM
+* Agile
+* Machine Learning
+* Git, Jenkins
 
 Publications
 ======
