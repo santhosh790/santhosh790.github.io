@@ -1,6 +1,6 @@
 ---
 title: "Data Wrangling"
-excerpt: "This is a data extraction project"
+excerpt: "This is a data collection project from a content management website. It collects images from the site and stores it in Google Drive."
 collection: portfolio
 ---
 
