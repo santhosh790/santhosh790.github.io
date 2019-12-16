@@ -1,0 +1,15 @@
+---
+title: "A Parallel Neural Network approach for Faster Rumor Identification in Online Social Networks"
+collection: publications
+permalink: /publication/TPCNN-1
+excerpt: 'This work tries to identify rumors at the earliest using CNN'
+date: 2019
+venue: 'International Journal on Semantic Web and Information Systems'
+paperurl: '10.4018/IJSWIS.2019100105'
+citation: 'Santhoshkumar, Srinivasan., and LD Dhinesh Babu. "A Parallel Neural Network approach for Faster Rumor Identification in Online Social Networks" International Journal on Semantic Web and Information Systems (IJSWIS) 15, no. 4 (2019): 69-89.'
+---
+This work tries to identify rumors at the earliest using CNN
+
+[Download paper here](http://doi.org/10.4018/IJSWIS.2019100105)
+
+Recommended citation: Santhoshkumar, Srinivasan., and LD Dhinesh Babu. "A Parallel Neural Network approach for Faster Rumor Identification in Online Social Networks" International Journal on Semantic Web and Information Systems (IJSWIS) 15, no. 4 (2019): 69-89.
