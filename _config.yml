@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Santhoshkumar"
   avatar           : "profile.png"
-  bio              : "A researcher, developer and creator"
-  location         : "India"
+  bio              : "A researcher, developer, writer and blogger"
+  location         : "Bangalore, India"
   employer         : "Relevance Lab Pvt. Ltd."
   pubmed           : 
   googlescholar    : 
@@ -103,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0000-0002-1592-0307"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username

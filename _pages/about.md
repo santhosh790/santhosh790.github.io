@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-*Santhoshkumar S* is a researcher, developer and creator. His research interests lie in machine learning, big graphs, online social networks. As part of his PhD research, he worked on identifying and controlling the rumors in online social networks. 
+*Santhoshkumar S* is a researcher, developer, writer and blogger. His research interests lie in machine learning, big graphs, online social networks. As part of his PhD research, he worked on identifying and controlling the rumors in online social networks. 
 
 He has 7+ years of experience in IT industry. He is a Java developer specialized in AEM (Adobe Experience Manager) development. He is also ceritified in Java (Oracle Certified Java Developer) as well as AEM (Adobe Certified AEM Development Expert). 
 
@@ -18,3 +18,7 @@ He has 7+ years of experience in IT industry. He is a Java developer specialized
 ## Certifications
 1. Oracle Ceritified Java Developer
 2. Adobe Ceritified AEM Development Expert
+
+## Blogs
+1. Data Science/Research Blog - [Blog](https://myresearchworks.wordpress.com/)
+2. AEM Blog - [Blog](http://myprogressivelearning.wordpress.com/)
