@@ -1,6 +1,6 @@
 ---
-title: "Exploratory Data Analysis"
-excerpt: "As part of this work, I've analyzed various datasets and explored different types of use cases."
+title: "Regression Analysis"
+excerpt: "As part of this work, I've worked on regression tasks for different types of use cases."
 collection: portfolio
 ---
 
