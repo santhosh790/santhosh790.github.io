@@ -18,9 +18,10 @@ He has 7+ years of experience in IT industry. He is a Java developer specialized
 ## Certifications
 1. Oracle Ceritified Java Developer
 2. Adobe Ceritified AEM Development Expert
-3. Data Science Math Skills - [Certificate](https://santhosh790.github.io/files/Coursera-WWCSAEBXFZSG.pdf)
+3. Duke University Certification on Data Science Math Skills - [Certificate](https://santhosh790.github.io/files/Coursera-WWCSAEBXFZSG.pdf)
 4. Machine Learning With Python - [Certificate1](https://santhosh790.github.io/files/ML0101EN-Cognitive-Class.pdf) [Certificate2](https://santhosh790.github.io/files/ML0101ENv3_Cognitive.pdf)
 5. Python 101 for Data Science - [Certificate](https://santhosh790.github.io/files/PY0101EN-Cognitive-Class.pdf)
+6. Data Science Methodology - [Ceritificate](https://courses.cognitiveclass.ai/certificates/0c3deb2df5c84536ad009ccf863d0dec)
 
 ## Blogs
 1. Data Science/Research Blog - [Blog](https://myresearchworks.wordpress.com/)
