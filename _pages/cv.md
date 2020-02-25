@@ -13,12 +13,13 @@ Education
 ======
 * H.S.C in Govt. Hr. Sec. School, Sathuvachari, TN, 2007, **88%**
 * M.S. in Software Engineering, VIT, Vellore, 2012, **9.22/10**
-* Ph.D in Information Technology, VIT, Vellore, 2020 (expected - Thesis Submitted)
+* Ph.D in Machine learning/Information Technology, VIT, Vellore, 2020 **9/10**
 
 Work experience
 ======
-* Jul 2014 - Present: Research Scholar
+* Jul 2014 - Feb 2020: Research Scholar
   * VIT, Vellore
+  * Machine learning researcher
   * Rumor identification and control in Online Social Networks
   * Supervisor: Dr. L. D. Dhinesh Babu
 

@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /about/
 title: "About"
 excerpt: "About me"
 author_profile: true
@@ -8,12 +8,15 @@ redirect_from:
   - /about.html
 ---
 
-*Santhoshkumar S* is a researcher, developer, writer and blogger. His research interests lie in machine learning, big graphs, online social networks. As part of his PhD research, he worked on identifying and controlling the rumors in online social networks. 
+*Santhoshkumar S* is a researcher, developer, and technical writer. His research interests lie in machine learning, big graphs, online social networks. As part of his PhD research, he worked on identifying and controlling the rumors in online social networks. 
 
-He has 7+ years of experience in IT industry. He is a Java developer specialized in AEM (Adobe Experience Manager) development. He is also ceritified in Java (Oracle Certified Java Developer) as well as AEM (Adobe Certified AEM Development Expert). 
+He has 7+ years of experience in IT industry. He is a Java developer specialized in AEM (Adobe Experience Manager) development. He is also certified in Java (Oracle Certified Java Developer) as well as AEM (Adobe Certified AEM Development Expert). 
 
 ## Current Employer
 **Team Leader** in Relevance Lab Pvt. Ltd
+
+## Research Interests
+He is interested in researches on solving modern problems with the help of machine learning and deep learning approaches. His major contributions in research are in rumor identification and control in online social networks, virtual machine provisioning in cloud computing systems, predicting diseases in healthcare domain
 
 ## Certifications
 1. Oracle Ceritified Java Developer
