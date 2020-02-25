@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Santhoshkumar S"
+title                    : "Dr. Santhoshkumar S"
 title_separator          : "-"
-name                     : &name "Santhoshkumar S"
+name                     : &name "Dr. Santhoshkumar S"
 description              : &description "This site describes my overall portfolio"
 url                      : https://santhosh790.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -80,13 +80,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "Santhoshkumar"
+  name             : "Santhoshkumar S"
   avatar           : "profile.png"
-  bio              : "A researcher, developer, writer and blogger"
+  bio              : "A researcher, developer, and writer"
   location         : "Bangalore, India"
   employer         : "Relevance Lab Pvt. Ltd."
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=2U2D8dAAAAAJ"
   email            : "santhoshramuk@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              : 
