@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-*Santhoshkumar S* is a researcher, developer, and technical writer. His research interests lie in machine learning, deep learning, big graphs, online social networks. As part of his PhD research, he worked on identifying and controlling the rumors in online social networks. 
+*Santhoshkumar S* is a researcher, developer, and technical writer. His research interests lie in machine learning, big graphs, online social networks. As part of his PhD research, he worked on identifying and controlling the rumors in online social networks. 
 
-He has more than 7 years of experience in IT industry. He is a Java developer specialized in AEM (Adobe Experience Manager) development. He is also certified in Java (Oracle Certified Java Developer) as well as AEM (Adobe Certified AEM Development Expert). He also has around 6 years of experience in research domain. He has successfully completed his doctorate in machine learning/information technology domain. He is actively doing research in online social networks.
+He has 7+ years of experience in IT industry. He is a Java developer specialized in AEM (Adobe Experience Manager) development. He is also certified in Java (Oracle Certified Java Developer) as well as AEM (Adobe Certified AEM Development Expert). 
 
 ## Current Employer
 **Team Leader** in Relevance Lab Pvt. Ltd
