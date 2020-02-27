@@ -5,7 +5,7 @@ permalink: /publication/bio-inspired-2
 excerpt: 'This work is Controlling the rumor in online social networks from the inspiration of insects'
 date: 2020-05-01
 venue: 'Journal of Organizational and End User Computing'
-paperurl: 'please write to santhoshramuk [at] gmail [dot] com'
+paperurl: 'https://doi.org/10.4018/IJWSR.2020010104'
 citation: 'In Forthcoming'
 ---
 This work is Controlling the rumor in online social networks from the inspiration of insects
