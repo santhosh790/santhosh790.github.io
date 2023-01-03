@@ -11,12 +11,16 @@ redirect_from:
 
 Education
 ======
-* H.S.C in Govt. Hr. Sec. School, Sathuvachari, TN, 2007, **88%**
-* M.S. in Software Engineering, VIT, Vellore, 2012, **9.22/10**
 * Ph.D in Machine learning/Information Technology, VIT, Vellore, 2020 **9/10**
+* M.S. in Software Engineering, VIT, Vellore, 2012, **9.22/10**
+*H.S.C in Govt. Hr. Sec. School, Sathuvachari, TN, 2007, **88%**
 
 Work experience
 ======
+* July 2022 - Present: Senior Consultant 
+  * Eurowings Digital GmbH, Germany (Owned by Eurowings Aviation)
+* July 2020 - Apr 2022: Senior Consultant 
+  * HitachiVantara (Formerly known as Hitachi Data Systems)
 * Jul 2014 - Feb 2020: Research Scholar
   * VIT, Vellore
   * Machine learning researcher
