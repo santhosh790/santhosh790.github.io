@@ -13,7 +13,7 @@ Education
 ======
 * Ph.D in Machine learning/Information Technology, VIT, Vellore, 2020 **9/10**
 * M.S. in Software Engineering, VIT, Vellore, 2012, **9.22/10**
-*H.S.C in Govt. Hr. Sec. School, Sathuvachari, TN, 2007, **88%**
+* H.S.C in Govt. Hr. Sec. School, Sathuvachari, TN, 2007, **88%**
 
 Work experience
 ======
