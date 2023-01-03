@@ -27,7 +27,7 @@ Work experience
   * Rumor identification and control in Online Social Networks
   * Supervisor: Dr. L. D. Dhinesh Babu
 
-* Apr 2016 - Present: Team Lead in AEM Development
+* Apr 2016 - July 2020: Team Lead in AEM Development
   * Relevance Lab Pvt Ltd
 
 * Sep 2014 - Apr 2016: Associate L2 in AEM Development
