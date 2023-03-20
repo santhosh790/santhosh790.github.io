@@ -11,4 +11,3 @@ Journal of Organizational and End User Computing 17(1), 64-82'
 ---
 This work is Controlling the rumor in online social networks from the inspiration of insects
 
-In Forthcoming articles of the journal.

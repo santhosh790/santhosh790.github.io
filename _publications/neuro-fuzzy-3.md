@@ -10,5 +10,3 @@ citation: 'Santhoshkumar, Srinivasan., and LD Dhinesh Babu (2020), ”A Neuro-Fu
 International Journal of Web Services Research (IJWSR) 17(1), 64-82'
 ---
 This paper uses neuro fuzzy technique to identify the rumors
-
-In forthcoming
