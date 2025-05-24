@@ -17,8 +17,8 @@ Education
 
 Work experience
 ======
-* July 2022 - Present: Senior Consultant 
-  * Eurowings Digital GmbH, Germany (Owned by Eurowings Aviation)
+* July 2022 - Present: Senior Data Scientist 
+  * Eurowings Digital GmbH, Germany (Owned by *Lufthansa Aviation*)
 * July 2020 - Apr 2022: Senior Consultant 
   * HitachiVantara (Formerly known as Hitachi Data Systems)
 * Jul 2014 - Feb 2020: Research Scholar
@@ -38,11 +38,12 @@ Work experience
   
 Skills
 ======
-* Java
+* MLOps
 * Python
   * pandas
   * numpy
   * Theano
+* Java
 * AEM
 * Agile
 * Machine Learning
