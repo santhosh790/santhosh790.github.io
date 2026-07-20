@@ -10,28 +10,28 @@ const config: Config = {
     extend: {
       colors: {
         background: {
-          DEFAULT: '#0a0a0a',
-          secondary: '#141414',
-          tertiary: '#1a1a1a',
+          DEFAULT: 'rgb(var(--color-bg) / <alpha-value>)',
+          secondary: 'rgb(var(--color-bg-secondary) / <alpha-value>)',
+          tertiary: 'rgb(var(--color-bg-tertiary) / <alpha-value>)',
         },
         surface: {
-          DEFAULT: '#1a1a1a',
-          hover: '#242424',
-          active: '#2a2a2a',
+          DEFAULT: 'rgb(var(--color-surface) / <alpha-value>)',
+          hover: 'rgb(var(--color-surface-hover) / <alpha-value>)',
+          active: 'rgb(var(--color-surface-active) / <alpha-value>)',
         },
         text: {
-          primary: '#f5f5f5',
-          secondary: '#a3a3a3',
-          tertiary: '#737373',
+          primary: 'rgb(var(--color-text-primary) / <alpha-value>)',
+          secondary: 'rgb(var(--color-text-secondary) / <alpha-value>)',
+          tertiary: 'rgb(var(--color-text-tertiary) / <alpha-value>)',
         },
         accent: {
-          DEFAULT: '#3b82f6',
-          hover: '#2563eb',
-          light: '#60a5fa',
+          DEFAULT: 'rgb(var(--color-accent) / <alpha-value>)',
+          hover: 'rgb(var(--color-accent-hover) / <alpha-value>)',
+          light: 'rgb(var(--color-accent-light) / <alpha-value>)',
         },
         border: {
-          DEFAULT: '#262626',
-          light: '#333333',
+          DEFAULT: 'rgb(var(--color-border) / <alpha-value>)',
+          light: 'rgb(var(--color-border-light) / <alpha-value>)',
         },
       },
       fontFamily: {

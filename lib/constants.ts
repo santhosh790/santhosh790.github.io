@@ -1,11 +1,12 @@
 export const SITE_CONFIG = {
   name: 'Dr. Santhoshkumar',
   fullName: 'Dr. Santhoshkumar',
-  title: 'Senior ML Engineer',
+  title: 'Senior Data Scientist / Senior ML Engineer',
   tagline: 'Building production AI systems with LLMs, RAG, and MLOps',
   description:
     'I build reliable AI systems that work in production. Specializing in making search intelligent, LLMs useful, and ML operations repeatable at enterprise scale.',
   company: 'Eurowings Digital GmbH',
+  currentRole: 'Senior Data Scientist / Senior ML Engineer',
   location: 'Europe | Remote',
   email: 'santhoshramuk@gmail.com',
   url: 'https://santhosh790.github.io',
@@ -40,6 +41,7 @@ export const HERO_SIGNALS = [
 
 export const NAVIGATION = [
   { name: 'Projects', href: '#projects' },
+  { name: 'Leadership', href: '#leadership' },
   { name: 'Experience', href: '#experience' },
   { name: 'Skills', href: '#skills' },
   { name: 'Blog', href: '/blog' },
@@ -524,3 +526,113 @@ export const TECH_STACK = {
   ],
   'Cloud & Infrastructure': ['Azure', 'AWS', 'FastAPI', 'REST APIs', 'Microservices'],
 } as const
+
+export const LEADERSHIP_HIGHLIGHTS = [
+  {
+    title: 'PhD in Machine Learning',
+    detail: 'VIT, Vellore · 2020 · GPA 9/10',
+    description:
+      'Completed doctoral research on rumor detection and control with deep learning.',
+  },
+  {
+    title: '4 Years Team Leadership',
+    detail: 'Team Lead, AEM Development · 2016-2020',
+    description:
+      'Led software delivery teams while completing PhD research in parallel.',
+  },
+  {
+    title: '13+ Years in Industry',
+    detail: 'From Java/AEM to Production AI',
+    description:
+      'Progressed from enterprise software engineering to ownership of production AI systems.',
+  },
+] as const
+
+export const PUBLICATIONS = [
+  {
+    title: 'A Parallel Neural Network approach for Faster Rumor Identification in Online Social Networks',
+    venue: 'International Journal on Semantic Web and Information Systems (IJSWIS)',
+    year: '2019',
+    impact: 'CNN architecture for early rumor identification.',
+    doi: 'https://doi.org/10.4018/IJSWIS.2019100105',
+  },
+  {
+    title: 'A Bio-inspired Defensive Rumor Confinement Strategy in Online Social Networks',
+    venue: 'Journal of Organizational and End User Computing',
+    year: '2020',
+    impact: 'Bio-inspired strategy for rumor containment.',
+    doi: 'https://doi.org/10.4018/IJWSR.2020010104',
+  },
+  {
+    title: 'A Neuro-Fuzzy approach to detect Rumors in Online Social Networks',
+    venue: 'International Journal of Web Services Research (IJWSR)',
+    year: '2020',
+    impact: 'Hybrid neuro-fuzzy model for rumor detection.',
+    doi: 'https://doi.org/10.4018/IJWSR.2020010104',
+  },
+  {
+    title: 'Interest Aware Influential Information Disseminators in Social Networks',
+    venue: 'SN Applied Sciences (Springer)',
+    year: '2019',
+    impact: 'Influence modeling for targeted information diffusion.',
+    doi: 'https://doi.org/10.1007/s42452-019-1436-x',
+  },
+  {
+    title: 'An Effective Rumor Control Approach for Online Social Networks',
+    venue: 'Information Systems Design and Intelligent Applications (Springer)',
+    year: '2019',
+    impact: 'Pulse-vaccination inspired rumor control strategy.',
+    doi: 'https://rd.springer.com/chapter/10.1007/978-981-13-3329-3_7',
+  },
+] as const
+
+export const SPEAKING = [
+  {
+    title: 'International Faculty Development Program (6-days)',
+    venue: 'Gopalan College of Engineering and Management (GCEM)',
+    date: '2025-02-03 to 2025-02-08',
+    location: 'Bengaluru, India',
+    summary:
+      'Delivered NLP and data science sessions for faculty, with research directions and live demos.',
+    links: ['/images/FDPPoster1.jpg', '/images/FDPPoster2.jpg'],
+  },
+  {
+    title: 'Guest Lecture on Professional Software Development Using Java',
+    venue: 'School of Information Technology and Engineering',
+    date: '2020-02-05',
+    location: 'VIT, Vellore',
+    summary: 'Presented software engineering process, tools, and applied Java practices.',
+    links: [],
+  },
+  {
+    title: 'Conference Proceedings talk on Rumor Control',
+    venue: 'INDIA-2018',
+    date: '2018-07-20',
+    location: 'Mauritius',
+    summary: 'Presented pulse-vaccination based rumor control research.',
+    links: ['https://santhosh790.github.io/files/conference-certificate.pdf'],
+  },
+] as const
+
+export const CERTIFICATIONS = [
+  {
+    title: 'Deep Learning Specialization',
+    issuer: 'Coursera',
+    link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/XH26VNFGSB99',
+  },
+  {
+    title: 'Mathematics for Machine Learning Specialization',
+    issuer: 'Coursera',
+    link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/D7HUKS5ZNCJK',
+  },
+  {
+    title: 'Oracle Certified Java Developer',
+    issuer: 'Oracle',
+    link: '',
+  },
+  {
+    title: 'Adobe Certified AEM Development Expert',
+    issuer: 'Adobe',
+    link: '',
+  },
+] as const

@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 import { HERO_SIGNALS, SITE_CONFIG, SOCIAL_LINKS } from '@/lib/constants'
 import { Button } from '@/components/ui/Button'
 
@@ -13,7 +14,7 @@ export function Hero() {
         <div className="grid items-center gap-14 pb-20 lg:min-h-[calc(100vh-7rem)] lg:grid-cols-[minmax(0,1.15fr)_minmax(22rem,0.85fr)]">
           <div className="animate-fade-in">
             <p className="mb-6 text-sm font-medium uppercase tracking-[0.22em] text-accent">
-              Senior ML Engineer at {SITE_CONFIG.company}
+              {SITE_CONFIG.currentRole} at {SITE_CONFIG.company}
             </p>
 
             <h1 className="max-w-4xl text-display-2 md:text-[5.75rem] text-text-primary font-bold leading-[0.98]">
@@ -70,6 +71,20 @@ export function Hero() {
 
           <div className="relative animate-slide-up">
             <div className="panel-grid rounded-[2rem] border border-border bg-background-secondary/85 p-6 shadow-[0_24px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl">
+              <div className="mb-5 flex items-center gap-4 rounded-2xl border border-border bg-surface/70 p-3">
+                <Image
+                  src="/images/profile.png"
+                  alt="Dr. Santhoshkumar"
+                  width={64}
+                  height={64}
+                  className="h-16 w-16 rounded-xl object-cover"
+                />
+                <div>
+                  <p className="text-sm uppercase tracking-[0.14em] text-accent">Production AI Leadership</p>
+                  <p className="text-text-primary font-semibold">Senior ML Engineer</p>
+                </div>
+              </div>
+
               <div className="flex items-center justify-between border-b border-border pb-5">
                 <div>
                   <p className="text-sm uppercase tracking-[0.2em] text-accent">Current Focus</p>

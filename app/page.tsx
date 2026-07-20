@@ -1,6 +1,9 @@
 import { Hero } from '@/components/Hero'
 import { CareerHighlights } from '@/components/CareerHighlights'
 import { FeaturedProjects } from '@/components/FeaturedProjects'
+import { LeadershipProof } from '@/components/LeadershipProof'
+import { ResearchPublications } from '@/components/ResearchPublications'
+import { SpeakingAndCredentials } from '@/components/SpeakingAndCredentials'
 import { ExperienceTimeline } from '@/components/ExperienceTimeline'
 import { TechStack } from '@/components/TechStack'
 import { BlogPreview } from '@/components/BlogPreview'
@@ -10,11 +13,14 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <CareerHighlights />
       <FeaturedProjects />
+      <CareerHighlights />
+      <LeadershipProof />
       <ExperienceTimeline />
+      <SpeakingAndCredentials />
       <TechStack />
       <BlogPreview />
+      <ResearchPublications />
       <Contact />
     </>
   )

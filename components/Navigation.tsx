@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { SITE_CONFIG, NAVIGATION, SOCIAL_LINKS } from '@/lib/constants'
 import { Button } from '@/components/ui/Button'
+import { ThemeToggle } from '@/components/ThemeToggle'
 import { cn } from '@/lib/utils'
 
 export function Navigation() {
@@ -79,6 +80,7 @@ export function Navigation() {
                 </button>
               )
             ))}
+            <ThemeToggle />
             <Button size="sm" asChild>
               <a href={SOCIAL_LINKS.resume} target="_blank" rel="noopener noreferrer">
                 Resume
@@ -114,6 +116,9 @@ export function Navigation() {
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col gap-4">
+              <div className="flex justify-start">
+                <ThemeToggle />
+              </div>
               {NAVIGATION.map((item) => (
                 item.href === '/blog' ? (
                   <Link

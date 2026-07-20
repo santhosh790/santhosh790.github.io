@@ -61,7 +61,19 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} dark`} suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(() => {
+  const saved = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const theme = saved || (prefersDark ? 'dark' : 'light');
+  document.documentElement.classList.toggle('dark', theme === 'dark');
+})();`,
+          }}
+        />
+      </head>
       <body>
         <Navigation />
         <main className="min-h-screen">{children}</main>
