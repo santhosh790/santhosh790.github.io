@@ -4,7 +4,12 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
-REQUIRED_NODE_VERSION="$(<"${PROJECT_ROOT}/.nvmrc")"
+DEFAULT_NODE_VERSION="22.17.1"
+if [[ -f "${PROJECT_ROOT}/.nvmrc" ]]; then
+  REQUIRED_NODE_VERSION="$(<"${PROJECT_ROOT}/.nvmrc")"
+else
+  REQUIRED_NODE_VERSION="${DEFAULT_NODE_VERSION}"
+fi
 REQUIRED_NODE_MAJOR="${REQUIRED_NODE_VERSION%%.*}"
 NODE_BIN_DIR="${HOME}/.nvm/versions/node/v${REQUIRED_NODE_VERSION}/bin"
 

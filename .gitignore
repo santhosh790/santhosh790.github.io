@@ -18,7 +18,6 @@ next-env.d.ts
 # NPM
 .npm-cache/
 .npmrc
-.nvmrc
 
 # Misc
 .DS_Store
