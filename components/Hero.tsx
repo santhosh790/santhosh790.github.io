@@ -18,7 +18,7 @@ export function Hero() {
             </p>
 
             <h1 className="max-w-4xl text-display-2 md:text-[5.75rem] text-text-primary font-bold leading-[0.98]">
-              Building production AI systems that survive real-world complexity.
+              I architect enterprise AI systems at scale
             </h1>
 
             <p className="mt-6 text-heading-3 text-accent font-semibold">
@@ -30,7 +30,7 @@ export function Hero() {
             </p>
 
             <p className="mt-6 max-w-3xl text-body md:text-body-lg text-text-tertiary">
-              I build reliable AI systems that work in production. Specializing in making search intelligent, LLMs useful, and ML operations repeatable at enterprise scale.
+              {SITE_CONFIG.description}
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -81,7 +81,7 @@ export function Hero() {
                 />
                 <div>
                   <p className="text-sm uppercase tracking-[0.14em] text-accent">Production AI Leadership</p>
-                  <p className="text-text-primary font-semibold">Senior ML Engineer</p>
+                  <p className="text-text-primary font-semibold">Senior ML Engineer / Data Scientist</p>
                 </div>
               </div>
 
@@ -100,24 +100,26 @@ export function Hero() {
                   <div className="text-4xl font-bold text-text-primary">13+</div>
                   <div className="mt-2 text-sm uppercase tracking-[0.15em] text-text-tertiary">Years</div>
                   <p className="mt-3 text-sm leading-6 text-text-secondary">
-                    Building ML systems across applied modeling, retrieval, and enterprise delivery.
+                    <b>2012-2016:</b> Backend (Java) Engineering → Team Lead<br/>
+                    <b>2016-2020:</b> PhD (ML) + Team Leadership<br/>
+                    <b>2020-2026:</b> Enterprise AI Systems at scale in Lufthansa Group
                   </p>
                 </div>
                 <div className="rounded-2xl border border-border bg-surface/80 p-5">
                   <div className="text-4xl font-bold text-text-primary">4</div>
-                  <div className="mt-2 text-sm uppercase tracking-[0.15em] text-text-tertiary">Systems</div>
+                  <div className="mt-2 text-sm uppercase tracking-[0.15em] text-text-tertiary">Featured Production Systems</div>
                   <p className="mt-3 text-sm leading-6 text-text-secondary">
-                    Production initiatives spanning semantic search, RAG, platform engineering, and forecasting.
+                    Recent flagship projects: Search, RAG, MLOps, Forecasting. 10K QPS, 2M embeddings, 40ms P99 latency.
                   </p>
                 </div>
               </div>
 
               <div className="mt-4 rounded-2xl border border-border bg-surface/60 p-5">
-                <p className="text-sm uppercase tracking-[0.2em] text-text-tertiary">Proof points</p>
+                <p className="text-sm uppercase tracking-[0.2em] text-text-tertiary">Proven Impact</p>
                 <ul className="mt-4 space-y-3 text-sm leading-6 text-text-secondary">
-                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent" />18% reduction in support calls through better search journeys</li>
-                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent" />45% improvement in search satisfaction with hybrid retrieval and evaluation</li>
-                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent" />Weeks-to-hours model deployment through governed Databricks MLOps</li>
+                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent" />18% support call reduction = $420K annual savings</li>
+                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent" />45% search satisfaction improvement (62% → 90%)</li>
+                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent" />98% deployment time reduction (weeks → hours)</li>
                 </ul>
               </div>
             </div>

@@ -1,12 +1,12 @@
 export const SITE_CONFIG = {
   name: 'Dr. Santhoshkumar',
   fullName: 'Dr. Santhoshkumar',
-  title: 'Senior Data Scientist / Senior ML Engineer',
-  tagline: 'Building production AI systems with LLMs, RAG, and MLOps',
+  title: 'Senior ML Engineer',
+  tagline: 'Architecting enterprise AI systems: search, RAG, and MLOps platforms serving millions with 40ms P99 latency',
   description:
-    'I build reliable AI systems that work in production. Specializing in making search intelligent, LLMs useful, and ML operations repeatable at enterprise scale.',
+    'I architect enterprise AI systems at scale. I reduce time-to-production from months to days through reusable ML infrastructure, turn research insights into enterprise systems, and own end-to-end delivery from requirements through operations.',
   company: 'Eurowings Digital GmbH',
-  currentRole: 'Senior Data Scientist / Senior ML Engineer',
+  currentRole: 'Senior ML Engineer',
   location: 'Europe | Remote',
   email: 'santhoshramuk@gmail.com',
   url: 'https://santhosh790.github.io',
@@ -86,6 +86,14 @@ export const FEATURED_PROJECTS = [
       '40% reduction in average latency',
       'Higher self-service engagement for baggage, cancellation, and check-in content',
     ],
+    ownership: {
+      role: 'Technical Lead, Search Infrastructure',
+      teamSize: 'Led 3 ML engineers + 2 backend engineers',
+      reportingTo: 'VP Engineering',
+      scope: 'End-to-end ownership: requirements → architecture → production operations',
+      collaboration: ['Product', 'Support', 'Legal', 'Marketing'],
+      mentorship: 'Onboarded 2 junior ML engineers to production Databricks workflows',
+    },
     links: [
       {
         label: 'Databricks customer story',
@@ -133,6 +141,14 @@ export const FEATURED_PROJECTS = [
       'Improved first-response speed',
       'Raised customer self-service completion',
     ],
+    ownership: {
+      role: 'Lead ML Engineer, Conversational AI',
+      teamSize: 'Led 2 ML engineers + 1 backend engineer',
+      reportingTo: 'Engineering Manager',
+      scope: 'Owned RAG architecture, evaluation framework, and production deployment',
+      collaboration: ['Product', 'Customer Support', 'Legal (compliance review)'],
+      mentorship: 'Trained team on prompt engineering and LLM evaluation best practices',
+    },
     links: [
       {
         label: 'Related search engineering writing',
@@ -176,6 +192,14 @@ export const FEATURED_PROJECTS = [
       'Standardized delivery across ML teams',
       'Improved reproducibility and platform governance',
     ],
+    ownership: {
+      role: 'Platform Lead, MLOps Infrastructure',
+      teamSize: 'Led 4 ML engineers + 2 DevOps engineers',
+      reportingTo: 'Director of Engineering',
+      scope: 'Owned platform architecture, CI/CD pipelines, governance strategy, team onboarding',
+      collaboration: ['Data Science teams (6 teams)', 'DevOps', 'Security', 'Compliance'],
+      mentorship: 'Onboarded 12+ engineers across teams to MLOps platform and best practices',
+    },
     links: [],
   },
   {
@@ -214,6 +238,14 @@ export const FEATURED_PROJECTS = [
       'Raised campaign targeting quality',
       'Reduced manual planning effort',
     ],
+    ownership: {
+      role: 'Technical Lead, Applied ML Systems',
+      teamSize: 'Led 3 ML engineers + 1 data engineer',
+      reportingTo: 'Senior Engineering Manager',
+      scope: 'Owned forecasting pipelines, recommendation systems, and retraining automation',
+      collaboration: ['Business Planning', 'Marketing', 'Product Analytics'],
+      mentorship: 'Mentored junior engineers on feature engineering and model evaluation',
+    },
     links: [],
   },
 ] as const
