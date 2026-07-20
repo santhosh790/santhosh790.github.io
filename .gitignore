@@ -1,2 +1,52 @@
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+
+# Dependencies
+/node_modules/
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Production
+/build
+/dist
+
+# NPM
+.npm-cache/
+.npmrc
+.nvmrc
+
+# Misc
+.DS_Store
+*.pem
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Local env files
+.env*.local
+.env
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jekyll (keep for now during migration)
 _site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
