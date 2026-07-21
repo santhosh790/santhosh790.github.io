@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { HERO_SIGNALS, SITE_CONFIG, SOCIAL_LINKS } from '@/lib/constants'
 import { Button } from '@/components/ui/Button'
 
@@ -13,25 +14,43 @@ export function Hero() {
       <div className="container mx-auto max-w-7xl px-6 md:px-8">
         <div className="grid items-center gap-14 pb-20 lg:min-h-[calc(100vh-7rem)] lg:grid-cols-[minmax(0,1.15fr)_minmax(22rem,0.85fr)]">
           <div className="animate-fade-in">
-            <p className="mb-6 text-sm font-medium uppercase tracking-[0.22em] text-accent">
-              {SITE_CONFIG.currentRole} at {SITE_CONFIG.company}
-            </p>
-
-            <h1 className="max-w-4xl text-display-2 md:text-[5.75rem] text-text-primary font-bold leading-[0.98]">
-              I architect enterprise AI systems at scale
+            <h1 className="max-w-4xl text-display-3 md:text-display-2 text-text-primary font-bold leading-tight">
+              {SITE_CONFIG.name}
             </h1>
 
-            <p className="mt-6 text-heading-3 text-accent font-semibold">
-              {SITE_CONFIG.name} · {SITE_CONFIG.title}
+            <p className="mt-6 text-heading-2 md:text-heading-1 text-accent font-semibold">
+              Senior Machine Learning Engineer | Enterprise AI Systems & Platforms
             </p>
 
             <p className="mt-8 max-w-3xl text-body-lg md:text-heading-3 text-text-secondary">
-              {SITE_CONFIG.tagline}
+              I design and deliver <strong className="text-text-primary">production-grade AI systems</strong> that improve customer experience while reducing operational costs.
             </p>
 
-            <p className="mt-6 max-w-3xl text-body md:text-body-lg text-text-tertiary">
-              {SITE_CONFIG.description}
+            <p className="mt-6 max-w-3xl text-body-lg text-text-tertiary">
+              At <strong className="text-text-secondary">Eurowings (Lufthansa Group)</strong>, I lead the design and delivery of AI platforms—from ambiguous business problems to reliable, monitored production systems.
             </p>
+
+            <div className="mt-10 rounded-2xl border border-border bg-surface/60 p-6">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-4">Highlights</p>
+              <ul className="space-y-3 text-body text-text-secondary">
+                <li className="flex items-start">
+                  <span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />
+                  <span>Reduced customer support calls by <strong className="text-text-primary">18%</strong></span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />
+                  <span>Improved search satisfaction by <strong className="text-text-primary">45%</strong></span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />
+                  <span>Reduced ML deployment cycles from <strong className="text-text-primary">weeks to hours</strong></span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />
+                  <span>Specialized in <strong className="text-text-primary">Semantic Search, RAG, LLM Applications and Enterprise MLOps</strong></span>
+                </li>
+              </ul>
+            </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
               {HERO_SIGNALS.map((signal) => (
@@ -44,9 +63,9 @@ export function Hero() {
               ))}
             </div>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
               <Button size="lg" asChild className="shadow-[0_18px_50px_rgba(59,130,246,0.18)]">
-                <a href={SOCIAL_LINKS.resume}>View Resume</a>
+                <a href={SOCIAL_LINKS.resume}>Resume</a>
               </Button>
               <Button
                 size="lg"
@@ -54,6 +73,13 @@ export function Hero() {
                 onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Case Studies
+              </Button>
+              <Button
+                size="lg"
+                variant="secondary"
+                asChild
+              >
+                <Link href="/blog">Blog</Link>
               </Button>
               <Button
                 size="lg"

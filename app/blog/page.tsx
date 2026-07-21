@@ -73,10 +73,12 @@ export default function BlogPage() {
         <header className="mb-12 border-b border-border pb-10">
           <p className="text-sm uppercase tracking-[0.2em] text-accent">Writing</p>
           <h1 className="mt-4 text-display-3 md:text-display-2 font-bold text-text-primary">
-            Engineering Notes from Production
+            Engineering Lessons from Production AI
           </h1>
           <p className="mt-5 max-w-3xl text-body-lg text-text-secondary">
-            Curated writing across production AI systems, applied machine learning, and data science foundations.
+            I write about designing, deploying, and operating AI systems in production. My articles focus on 
+            the engineering challenges that emerge after a prototype becomes a real product—retrieval quality, 
+            evaluation, latency, scalability, monitoring, and reliability.
           </p>
         </header>
 

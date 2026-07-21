@@ -8,11 +8,15 @@ export function Contact() {
     <Section id="contact">
       <div className="max-w-3xl mx-auto text-center">
         <SectionHeader className="text-center">
-          <SectionTitle>Let's Connect</SectionTitle>
+          <SectionTitle>Interested in building reliable AI systems?</SectionTitle>
           <SectionSubtitle>
-            Interested in search, LLM systems, production ML, or enterprise AI architecture? I am open to technical conversations, advisory work, and senior engineering opportunities.
+            I'm always happy to discuss Enterprise AI, Search, RAG, MLOps, and Production Machine Learning.
           </SectionSubtitle>
         </SectionHeader>
+
+        <p className="text-heading-3 text-accent font-semibold mb-8">
+          Let's connect.
+        </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <Button size="lg" asChild>

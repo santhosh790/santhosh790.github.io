@@ -10,7 +10,7 @@ export function FeaturedProjects() {
   return (
     <Section id="projects">
       <SectionHeader>
-        <SectionTitle>Featured Projects</SectionTitle>
+        <SectionTitle>Enterprise AI Systems</SectionTitle>
         <SectionSubtitle>
           Production AI systems built for enterprise scale. From search to RAG to MLOps infrastructure.
         </SectionSubtitle>

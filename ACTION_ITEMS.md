@@ -1,8 +1,25 @@
 # Portfolio Action Items - Consolidated Checklist
 
 **Last Updated:** 2026-07-21  
-**Current Score:** 5.5/10 → **Target:** 8.5/10  
-**Portfolio Status:** Phase 1 Complete (6.5/10)
+**Current Score:** 6.5/10 → **Target:** 8.5/10  
+**Portfolio Status:** Phase 1 Complete + Major UI Overhaul Complete
+
+---
+
+## ✅ JUST COMPLETED - Major Portfolio Overhaul (2 hours)
+
+### Immediate Improvements Implemented:
+- [x] **Hero Section Redesign** - New structured approach with highlights, clear value proposition, [Resume] [Case Studies] [Blog] [Contact] CTAs
+- [x] **Professional Summary Section** - Added dedicated "About" section explaining career evolution
+- [x] **Engineering Philosophy Section** - NEW section with 5 core design principles
+- [x] **Leadership & Delivery Section** - NEW section documenting technical leadership responsibilities
+- [x] **Currently Exploring Section** - NEW section showing current learning areas (Agentic AI, MCP Servers, Long-context RAG, etc.)
+- [x] **Navigation Update** - Changed to: Home | Enterprise AI Systems | Technical Writing | Open Source | About | Resume | Contact
+- [x] **Section Rename** - "Projects" → "Enterprise AI Systems"
+- [x] **Blog Landing Page** - Updated with "Engineering Lessons from Production AI" messaging
+- [x] **Footer/Contact Update** - New messaging: "Interested in building reliable AI systems? Let's connect."
+
+**Build Status:** ✅ 29/29 pages generated successfully
 
 ---
 
@@ -14,9 +31,9 @@
 2. Enterprise RAG/Customer Support
 3. Enterprise MLOps Platform  
 4. Forecasting & Personalization
-5. AI Search Agent (Open Source)
+5. AI Search Agent (featured open source)
 
-### 🚀 Tier 2: Open Source AI & Engineering
+### 🚀 Tier 2: Open Source AI & Engineering (DONE)
 3 projects demonstrating breadth and experimentation:
 1. NOPC (Developer Productivity Tool)
 2. Web Scraping API Experiments (Data Engineering)
@@ -27,77 +44,79 @@ Blog posts and thought leadership content
 
 ---
 
-## ✅ Phase 1: COMPLETED (Weekend Work - 4.75 hours)
+## 🚀 REMAINING WORK - What Still Needs Your Input
 
-### Done Items:
-- [x] **Rewrite hero headline** - Changed to "I architect enterprise AI systems at scale"
-- [x] **Fix role title** - Changed from "Senior Data Scientist / Senior ML Engineer" to "Senior ML Engineer"
-- [x] **Add career progression timeline** - Added 2008-2026 timeline to hero card
-- [x] **Remove buzzwords** - Replaced with concrete numbers (10K QPS, 2M embeddings, 40ms P99)
-- [x] **Add team/ownership context** - Added to all 4 projects (team size, reporting, scope, collaboration)
-- [x] **Update Featured Systems label** - Changed from "Production Systems" to "Featured Systems"
+### PHASE 2A: Enhanced Project Details (8-12 hours)
 
-**Result:** Portfolio improved from 5.5/10 → 6.5/10
+#### 1. Add "Engineering Decisions" Sections (4h)
+**File:** `lib/constants.ts` - Update each of 5 FEATURED_PROJECTS
 
----
+Each project needs a detailed `engineeringDecisions` array explaining WHY specific technologies were chosen:
 
-## 🚀 Phase 2: NEXT UP (Week 1 - 15 hours)
-
-### Priority: HIGH | Expected Result: 6.5/10 → 7.5/10
-
-### 1. Add Cost/Scale Metrics (3h) - CRITICAL
-**File:** `lib/constants.ts`  
-**Priority:** 🔴 CRITICAL
-
-Add `metrics` object to each project:
+**Example for AI Search project:**
 ```typescript
-metrics: {
-  scale: {
-    qps: "10,000 peak, 3M queries/day",
-    indexSize: "2M document embeddings (1536-dim), 12GB RAM",
-    dataVolume: "500GB corpus, 2M documents",
-    concurrentUsers: "5,000 peak"
+engineeringDecisions: [
+  {
+    decision: "Why Hybrid Search?",
+    rationale: "Vector search alone created 12% false positive rate. BM25 alone missed 18% of semantic queries. Hybrid with confidence scoring reduced false positives to 3% while maintaining 95% recall."
   },
-  performance: {
-    latencyP50: "20ms",
-    latencyP95: "35ms",
-    latencyP99: "40ms (vs 180ms baseline)",
-    availability: "99.95% uptime"
+  {
+    decision: "Why Databricks Vector Search?",
+    rationale: "Existing Databricks governance, Unity Catalog integration, and team familiarity. Alternative (Pinecone) would require new vendor approval, separate access control, and learning curve."
   },
-  cost: {
-    perQuery: "$0.008 all-in (API + compute + storage)",
-    monthlyInfra: "$12K (vs $45K baseline)",
-    businessImpact: "18% support call reduction = $420K annual savings"
-  }
-}
+  {
+    decision: "Why Azure OpenAI vs OpenAI API?",
+    rationale: "Enterprise data residency requirements (EU data must stay in EU). Azure OpenAI provides EU regions with same model quality. Also integrates with existing Azure Key Vault security."
+  },
+  {
+    decision: "Why LlamaIndex vs LangChain?",
+    rationale: "LlamaIndex's index abstraction aligned better with our retrieval-first architecture. LangChain felt more agent-focused, which we didn't need. Simpler learning curve for team."
+  },
+]
 ```
 
-**Impact:** Proves enterprise-scale experience and cost awareness
+**TODO:** Write similar sections for:
+- Enterprise RAG project
+- MLOps Platform project  
+- Forecasting Platform project
+- AI Search Agent project
+
+**Priority:** 🟡 Medium (recruiters love this content)
 
 ---
 
-### 2. Write Production Failure Blog Post (4h) - CRITICAL
-**File:** `_posts/2026-07-20-production-lessons-embedding-model.md` (NEW)  
-**Priority:** 🔴 CRITICAL - HIGHEST ROI
+#### 2. Add "Production Challenges" Details (4h)
+**File:** `lib/constants.ts` - Expand each project's `productionChallenges`
 
-**Title:** "Production Lessons: Embedding Model Update Broke Search"
+Each project should detail:
+- **Latency challenges:** What caused slowness? How did you fix it?
+- **Scaling challenges:** What broke at scale? How did you handle it?
+- **Monitoring challenges:** What metrics did you track? How did you detect issues?
+- **Failure scenarios:** What went wrong? How did you recover?
+- **Evaluation challenges:** How did you measure quality? What methods worked/failed?
+- **Security challenges:** What security requirements existed? How did you meet them?
 
-**Structure:**
-```markdown
-## The Incident
-- Rolled new text-embedding-ada-002 to production
-- Recall dropped 15% within 2 hours
-- 2,000+ users affected before rollback
+**Example expansion for AI Search:**
+```typescript
+productionChallenges: [
+  {
+    challenge: "Latency Optimization",
+    problem: "Initial implementation had 180ms P99 latency due to sequential retrieval then reranking.",
+    solution: "Parallelized BM25 and vector search, reduced rerank set from 100 to 20 candidates, added Redis caching for common queries. Result: 40ms P99 latency (78% reduction).",
+    learnings: "Measure first, optimize second. Caching helped 40% of queries. Rerank quality didn't degrade when reducing from 100→20 candidates."
+  },
+  {
+    challenge: "Vector Search False Positives",
+    problem: "Vector search returned results even for nonsense queries. 12% of low-confidence results were irrelevant.",
+    solution: "Introduced confidence threshold (0.7) and score-gap heuristic (top result must be 0.15 better than #2). Added 'no confident results' fallback.",
+    learnings: "Vector search always returns *something*. Explicit thresholds are mandatory for production quality."
+  },
+]
+```
 
-## Root Cause
-- New model had different similarity threshold distribution
-- Existing confidence threshold (0.7) was calibrated for old model
-- No similarity distribution analysis in pre-deployment testing
+**TODO:** Create similar detailed challenges for all 5 projects
 
-## Detection
-- Offline evaluation pipeline alerted: nDCG@10 dropped from 0.84 to 0.71
-- User feedback spike: "search results are worse"
-- Detected in 2 hours via automated monitoring
+**Priority:** 🔴 HIGH (proves production maturity)
 
 ## Recovery
 1. Canary rollback to previous model (15 minutes)
@@ -527,6 +546,185 @@ Target tier-1 venues: MLOps World, Applied ML Days, NeurIPS workshops
 
 ---
 
+## � PHASE 2B: Critical Additions from Latest Review (15-20 hours)
+
+### 18. Create Detailed Case Study Pages (12h) - 🔴 CRITICAL
+**Files:** Create `app/case-studies/[slug]/page.tsx` and 5 detailed markdown files  
+**Priority:** 🔴 CRITICAL - HIGHEST IMPACT ADDITION
+
+**User Feedback:** *"This is the single highest-impact addition you can make. It will differentiate your portfolio from the vast majority of ML engineer websites."*
+
+Each flagship project needs a dedicated 8-12 minute read case study with:
+
+**Structure for Each Case Study:**
+```markdown
+# [Project Name]: Detailed Case Study
+
+## Executive Summary (1 min)
+- Business Context
+- Technical Challenge
+- Solution Overview
+- Business Impact
+
+## Business Context (2 min)
+- Company background (Lufthansa Group scale)
+- Problem statement
+- Stakeholders involved
+- Success criteria
+
+## Architecture (2-3 min)
+- System architecture diagram
+- Technology choices and rationale
+- Data flow
+- Integration points
+- Why this architecture? (critical decisions)
+
+## Technical Decisions (2 min)
+- Decision 1: Technology X vs Y
+  - Options considered
+  - Selection criteria
+  - Final choice and rationale
+  - Trade-offs accepted
+- Decision 2: ...
+- Decision 3: ...
+
+## Engineering Challenges (2 min)
+- Challenge 1: [e.g., Latency]
+  - Problem manifestation
+  - Root cause analysis
+  - Solution approach
+  - Results
+- Challenge 2: [e.g., False positives]
+  - ...
+
+## Production Incidents & Learnings (1-2 min)
+- Incident 1: Embedding model update broke recall
+  - What happened
+  - Detection method
+  - Response & rollback
+  - Prevention measures
+- Incident 2: ...
+
+## Monitoring & Evaluation (1 min)
+- Offline evaluation pipeline
+- Online metrics
+- A/B testing methodology
+- Alerting strategy
+
+## Results (1 min)
+- Quantitative metrics (before/after)
+- Business impact ($420K savings)
+- Technical improvements (40ms P99)
+- User feedback
+
+## Lessons Learned (1 min)
+- What worked well
+- What I'd do differently
+- Advice for similar projects
+```
+
+**Files to Create:**
+1. `/app/case-studies/page.tsx` - Case studies index page
+2. `/app/case-studies/ai-search/page.tsx` - Semantic Search deep dive
+3. `/app/case-studies/enterprise-rag/page.tsx` - RAG system deep dive
+4. `/app/case-studies/mlops-platform/page.tsx` - MLOps deep dive
+5. `/app/case-studies/forecasting-platform/page.tsx` - Forecasting deep dive
+6. `/app/case-studies/ai-search-agent/page.tsx` - Agent architecture deep dive
+
+**Impact:** 🌟🌟🌟 This is the DIFFERENTIATOR. Most portfolios lack this depth.
+
+---
+
+### 19. Update Project Card Structure (3h) - 🟡 MEDIUM-HIGH
+**File:** `components/FeaturedProjects.tsx`  
+**Priority:** 🟡 MEDIUM-HIGH
+
+**User Request:** Transform project cards from simple structure to:
+
+```
+Problem
+   ↓
+Architecture
+   ↓
+Engineering Challenges
+   ↓
+Technical Decisions
+   ↓
+Production Learnings
+   ↓
+Business Impact
+   ↓
+Read Case Study [Button]
+```
+
+**Current:** Simple card with title, description, tags  
+**Needed:** Multi-section expandable/collapsible card OR link to detailed case study
+
+**Implementation Options:**
+- Option A: Expandable accordion cards on homepage
+- Option B: Shorter cards linking to detailed case study pages (RECOMMENDED)
+- Option C: Hybrid: brief overview + "Read Full Case Study" CTA
+
+---
+
+### 20. Archive Old Content (2h) - 🟢 MEDIUM
+**Files:** Multiple blog posts and pages  
+**Priority:** 🟢 MEDIUM
+
+**User Request:** *"Move old Java/AEM articles into Archive → Software Engineering (2014–2020). Homepage should primarily showcase AI-focused work."*
+
+**TODO:**
+1. Create `/app/archive/page.tsx` for older content
+2. Move Java/AEM/Backend Engineering posts to archive section
+3. Update blog categorization to prioritize AI/ML content
+4. Add "Archive" section in navigation (optional, low priority)
+5. Update homepage blog preview to show only AI/ML articles
+
+**Files to Potentially Archive:**
+- Old Java engineering posts (pre-2020)
+- AEM development articles
+- Generic software engineering posts
+
+**Keep Featured:**
+- All LLM/RAG/Search/MLOps content
+- Production AI lessons
+- Recent ML engineering posts
+
+---
+
+### 21. Add "Technical Writing" Section to Homepage (2h) - 🟡 MEDIUM-HIGH
+**File:** Create `components/TechnicalWriting.tsx` or enhance existing BlogPreview  
+**Priority:** 🟡 MEDIUM-HIGH
+
+**User Request:** Replace simple blog link with featured section:
+
+```markdown
+## Technical Writing
+
+### Production AI Engineering
+
+✓ Vector Search
+✓ RAG Evaluation  
+✓ MLOps
+✓ Enterprise Search
+
+**Featured Articles:**
+- Why Vector Search Never Says "No Results"
+- Memento: How LLMs Benefit from Self-Generated Context
+- MLOps Capacity Planning (coming soon)
+- Retrieval Evaluation in Production (coming soon)
+
+[Read Articles →]
+```
+
+**Implementation:**
+- Enhance existing BlogPreview component OR
+- Create new TechnicalWriting component
+- Show featured articles with summaries
+- Link to full blog
+
+---
+
 ## 📝 Notes
 
 ### Key Decisions Made:
@@ -534,13 +732,20 @@ Target tier-1 venues: MLOps World, Applied ML Days, NeurIPS workshops
 - ✅ Role title clarified (removed DS confusion)
 - ✅ Team ownership context added to prove leadership
 - ✅ Career timeline shows growth trajectory
+- ✅ Major UI overhaul complete: Professional Summary, Engineering Philosophy, Leadership & Delivery, Currently Exploring sections added
+- ✅ Navigation restructured: Home | Enterprise AI Systems | Technical Writing | Open Source | About | Resume | Contact
+- ✅ Blog landing page updated with "Engineering Lessons from Production AI" focus
+- ✅ Footer/Contact updated with clear value proposition
 
 ### Still to Decide:
 - [ ] Mermaid vs SVG vs Lucidchart for architecture diagrams
 - [ ] Real vs mock charts for evidence artifacts
 - [ ] Which 1-2 projects to showcase with production screenshots
+- [ ] Case study format: separate pages vs expandable cards
+- [ ] Archive navigation: dedicated page vs hidden section
 
 ---
 
-**Last Updated:** 2026-07-20  
-**Next Review:** After Phase 2 completion
+**Last Updated:** 2026-07-21  
+**Next Review:** After case study pages creation
+

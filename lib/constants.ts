@@ -42,11 +42,11 @@ export const HERO_SIGNALS = [
 ] as const
 
 export const NAVIGATION = [
-  { name: 'Projects', href: '#projects' },
-  { name: 'Leadership', href: '#leadership' },
-  { name: 'Experience', href: '#experience' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Blog', href: '/blog' },
+  { name: 'Home', href: '/' },
+  { name: 'Enterprise AI Systems', href: '#projects' },
+  { name: 'Technical Writing', href: '/blog' },
+  { name: 'Open Source', href: '#open-source' },
+  { name: 'About', href: '#about' },
   { name: 'Contact', href: '#contact' },
 ] as const
 
