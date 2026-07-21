@@ -6,7 +6,7 @@ export const SITE_CONFIG = {
   description:
     'I architect enterprise AI systems at scale. I reduce time-to-production from months to days through reusable ML infrastructure, turn research insights into enterprise systems, and own end-to-end delivery from requirements through operations.',
   company: 'Eurowings Digital GmbH',
-  currentRole: 'Senior ML Engineer',
+  currentRole: 'Senior ML Engineer / Data Scientist',
   location: 'Europe | Remote',
   email: 'santhoshramuk@gmail.com',
   url: 'https://santhosh790.github.io',
@@ -32,8 +32,10 @@ export const SOCIAL_LINKS = {
 } as const
 
 export const HERO_SIGNALS = [
-  'Search & Retrieval',
+  'Agentic AI',
   'LLM Systems',
+  'ML Systems',
+  'Semantic Search',
   'Production MLOps',
   'Databricks',
   'Azure',
@@ -247,6 +249,148 @@ export const FEATURED_PROJECTS = [
       mentorship: 'Mentored junior engineers on feature engineering and model evaluation',
     },
     links: [],
+  },
+  {
+    id: 'ai-search-agent',
+    title: 'AI Search Agent',
+    slug: 'ai-search-agent',
+    company: 'Open Source',
+    duration: '2-month experimentation',
+    tagline: 'Agentic AI combining search, reasoning, and tool calling',
+    description:
+      'Built an AI agent that combines semantic search, multi-step reasoning, and external tool calling to answer complex information requests beyond traditional document retrieval.',
+    impact: ['Modern agent architecture', 'Reusable reference implementation', 'Accelerates LLM experimentation'],
+    tags: ['AI Agents', 'Semantic Search', 'Tool Calling', 'LangChain', 'GPT-4'],
+    category: 'opensource',
+    featured: true,
+    businessProblem:
+      'Traditional search engines return documents, but users increasingly expect conversational answers and autonomous task execution requiring multi-step reasoning.',
+    architecture: [
+      'User query → Planner → Search Tool → Retriever → LLM Reasoning → Response Generation',
+      'LangChain/LlamaIndex framework for agent orchestration',
+      'Vector search for semantic retrieval',
+      'Web search API integration for real-time information',
+      'REST API deployment with Docker support',
+    ],
+    technicalDecisions: [
+      'Designed agent workflows where LLM decides when to search versus answer directly, reducing unnecessary API calls.',
+      'Balanced retrieved context against token limits through query reformulation and context compression.',
+      'Used tool calling to ground factual responses in external knowledge rather than relying solely on LLM parametric memory.',
+    ],
+    productionChallenges: [
+      'Monitored API latency, tool success rate, token usage, and search accuracy.',
+      'Evaluated quality through human evaluation, retrieval precision, and task completion rate.',
+      'Designed stateless architecture enabling horizontal scaling for production deployment.',
+    ],
+    outcomes: [
+      'Demonstrates modern Agentic AI design patterns',
+      'Provides foundation for enterprise search assistants',
+      'Extensible with MCP servers and external tools',
+    ],
+    ownership: {
+      role: 'Solution Architect & ML Engineer',
+      teamSize: 'Individual contributor (open source)',
+      reportingTo: 'N/A (personal project)',
+      scope: 'End-to-end design: architecture → implementation → evaluation',
+      collaboration: ['Open source community'],
+      mentorship: 'Serves as reference implementation for AI engineers and students',
+    },
+    links: [
+      {
+        label: 'GitHub Repository',
+        href: 'https://github.com/santhosh790/ai-search-agent',
+      },
+    ],
+  },
+] as const
+
+export const OPEN_SOURCE_PROJECTS = [
+  {
+    id: 'nopc',
+    title: 'NOPC',
+    slug: 'nopc',
+    tagline: 'Developer productivity tool for project automation',
+    description:
+      'Created a reusable CLI utility to simplify repetitive project setup and automation tasks, demonstrating clean software engineering practices.',
+    impact: ['Reduced setup effort', 'Cross-platform compatibility', 'Extensible architecture'],
+    tags: ['Python', 'CLI', 'Automation', 'DevTools'],
+    category: 'utilities',
+    businessProblem:
+      'Developers perform repetitive project setup and automation tasks that could be standardized through reusable tooling.',
+    technicalChallenges: [
+      'Cross-platform compatibility (Windows, macOS, Linux)',
+      'Ease of use for non-technical users',
+      'Extensibility for custom workflows',
+    ],
+    outcomes: [
+      'Open-source developer utility',
+      'Demonstrates clean software engineering practices',
+      'Reusable across multiple project types',
+    ],
+    links: [
+      {
+        label: 'GitHub Repository',
+        href: 'https://github.com/santhosh790/nopc',
+      },
+    ],
+  },
+  {
+    id: 'web-scraping-experiments',
+    title: 'Web Scraping API Experiments',
+    slug: 'web-scraping-experiments',
+    tagline: 'Data engineering experiments for AI pipeline data collection',
+    description:
+      'Comparative experiments evaluating different web scraping APIs for reliability, cost, JavaScript rendering, and anti-bot handling to identify suitable approaches for LLM and RAG data pipelines.',
+    impact: ['API benchmarking', 'Cost-quality tradeoffs', 'Production-ready evaluation'],
+    tags: ['Python', 'Data Engineering', 'Web Scraping', 'API Integration'],
+    category: 'data-engineering',
+    businessProblem:
+      'Reliable web data collection is critical for LLM pipelines, RAG systems, and dataset creation. Different scraping APIs vary in reliability, cost, and anti-bot handling.',
+    technicalChallenges: [
+      'Dynamic websites with JavaScript rendering',
+      'Rate limiting and API reliability',
+      'Structured data extraction from unstructured HTML',
+    ],
+    outcomes: [
+      'Built reusable evaluation scripts',
+      'Identified strengths and weaknesses of different scraping solutions',
+      'Demonstrated data engineering for AI workflows',
+    ],
+    links: [
+      {
+        label: 'GitHub Repository',
+        href: 'https://github.com/santhosh790/WebScrapingAPIExperiments',
+      },
+    ],
+  },
+  {
+    id: 'openaq-pipeline',
+    title: 'OpenAQ API to Dataset Pipeline',
+    slug: 'openaq-pipeline',
+    tagline: 'ETL pipeline for environmental data ingestion',
+    description:
+      'Built a modular ETL pipeline to automate ingestion and preprocessing of OpenAQ environmental data, transforming raw API data into analysis-ready datasets for ML workflows.',
+    impact: ['Automated dataset creation', 'Reduced preprocessing effort', 'Production ETL design'],
+    tags: ['Python', 'ETL', 'API Integration', 'Data Processing'],
+    category: 'data-engineering',
+    businessProblem:
+      'Machine learning projects require clean, structured datasets. Public environmental APIs expose raw data that must be transformed into analysis-ready formats.',
+    technicalChallenges: [
+      'API pagination and rate limiting',
+      'Handling missing values and schema consistency',
+      'Incremental ingestion for large datasets',
+    ],
+    outcomes: [
+      'Automated creation of structured datasets',
+      'Reduced manual preprocessing effort',
+      'Modular ETL design separating extraction, transformation, and loading',
+    ],
+    links: [
+      {
+        label: 'GitHub Repository',
+        href: 'https://github.com/santhosh790/openaqapi2dataset',
+      },
+    ],
   },
 ] as const
 
@@ -567,10 +711,10 @@ export const LEADERSHIP_HIGHLIGHTS = [
       'Completed doctoral research on rumor detection and control with deep learning.',
   },
   {
-    title: '4 Years Team Leadership',
-    detail: 'Team Lead, AEM Development · 2016-2020',
+    title: '10+ Years Team Leadership',
+    detail: 'From Software Teams to ML Teams · 2016-Present',
     description:
-      'Led software delivery teams while completing PhD research in parallel.',
+      'Led software delivery teams (2016-2020), then transitioned to leading ML engineering teams—[cross-functional teams] building production AI systems (2020-present).',
   },
   {
     title: '13+ Years in Industry',

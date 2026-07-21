@@ -1,6 +1,7 @@
 import { Hero } from '@/components/Hero'
 import { CareerHighlights } from '@/components/CareerHighlights'
 import { FeaturedProjects } from '@/components/FeaturedProjects'
+import { OpenSourceProjects } from '@/components/OpenSourceProjects'
 import { LeadershipProof } from '@/components/LeadershipProof'
 import { ResearchPublications } from '@/components/ResearchPublications'
 import { SpeakingAndCredentials } from '@/components/SpeakingAndCredentials'
@@ -14,6 +15,7 @@ export default function HomePage() {
     <>
       <Hero />
       <FeaturedProjects />
+      <OpenSourceProjects />
       <CareerHighlights />
       <LeadershipProof />
       <ExperienceTimeline />
