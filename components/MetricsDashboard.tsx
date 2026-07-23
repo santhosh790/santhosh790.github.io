@@ -85,7 +85,7 @@ export function MetricsDashboard() {
         <div className="mt-12 text-center">
           <p className="text-body text-text-secondary max-w-3xl mx-auto">
             Delivered across 5 enterprise AI platforms at <strong className="text-text-primary">Eurowings (Lufthansa Group)</strong>, 
-            serving millions of customers with reliable, production-grade AI systems.
+            serving millions of customers with reliable, battle-tested AI systems.
           </p>
         </div>
       </div>

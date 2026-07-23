@@ -2,8 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
-import { HERO_SIGNALS, SITE_CONFIG, SOCIAL_LINKS } from '@/lib/constants'
+import { HERO_SIGNALS, SITE_CONFIG } from '@/lib/constants'
 import { Button } from '@/components/ui/Button'
 
 export function Hero() {
@@ -19,15 +18,15 @@ export function Hero() {
             </h1>
 
             <p className="mt-6 text-heading-2 md:text-heading-1 text-accent font-semibold">
-              Senior Machine Learning Engineer | Enterprise AI Systems & Platforms
+              Senior ML Engineer | Senior Data Scientist
             </p>
 
             <p className="mt-8 max-w-3xl text-body-lg md:text-heading-3 text-text-secondary">
-              I design and deliver <strong className="text-text-primary">production-grade AI systems</strong> that improve customer experience while reducing operational costs.
+              I build reliable <strong className="text-text-primary">enterprise search, RAG, and MLOps systems</strong>—from retrieval evaluation and architecture through monitored delivery.
             </p>
 
             <p className="mt-6 max-w-3xl text-body-lg text-text-tertiary">
-              At <strong className="text-text-secondary">Eurowings (Lufthansa Group)</strong>, I lead the design and delivery of AI platforms—from ambiguous business problems to reliable, monitored production systems.
+              At <strong className="text-text-secondary">Eurowings Digital (Lufthansa Group)</strong>, I work on AI platforms that improve self-service and make ML delivery more repeatable.
             </p>
 
             <div className="mt-10 rounded-2xl border border-border bg-surface/60 p-6">
@@ -35,19 +34,15 @@ export function Hero() {
               <ul className="space-y-3 text-body text-text-secondary">
                 <li className="flex items-start">
                   <span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />
-                  <span>Reduced customer support calls by <strong className="text-text-primary">18%</strong></span>
+                  <span><strong className="text-text-primary">4 production AI systems</strong> across semantic search, RAG, MLOps, and forecasting</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />
-                  <span>Improved search satisfaction by <strong className="text-text-primary">45%</strong></span>
+                  <span><strong className="text-text-primary">13+ years</strong> across software engineering, data analytics, and machine learning</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />
-                  <span>Reduced ML deployment cycles from <strong className="text-text-primary">weeks to hours</strong></span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />
-                  <span>Specialized in <strong className="text-text-primary">Semantic Search, RAG, LLM Applications and Enterprise MLOps</strong></span>
+                  <span><strong className="text-text-primary">Ph.D. in Information Technology</strong> with machine-learning research focus</span>
                 </li>
               </ul>
             </div>
@@ -63,27 +58,13 @@ export function Hero() {
               ))}
             </div>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Button size="lg" asChild className="shadow-[0_18px_50px_rgba(59,130,246,0.18)]">
-                <a href={SOCIAL_LINKS.resume}>Resume</a>
+                <a href="#projects">View case studies</a>
               </Button>
               <Button
                 size="lg"
                 variant="secondary"
-                onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Case Studies
-              </Button>
-              <Button
-                size="lg"
-                variant="secondary"
-                asChild
-              >
-                <Link href="/blog">Blog</Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="ghost"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Contact
@@ -106,18 +87,8 @@ export function Hero() {
                   className="h-16 w-16 rounded-xl object-cover"
                 />
                 <div>
-                  <p className="text-sm uppercase tracking-[0.14em] text-accent">Production AI Leadership</p>
-                  <p className="text-text-primary font-semibold">Senior ML Engineer / Data Scientist</p>
-                </div>
-              </div>
-
-              <div className="flex items-center justify-between border-b border-border pb-5">
-                <div>
-                  <p className="text-sm uppercase tracking-[0.2em] text-accent">Current Focus</p>
-                  <p className="mt-2 text-xl font-semibold text-text-primary">Search, LLMs, and MLOps</p>
-                </div>
-                <div className="rounded-full border border-accent/25 bg-accent/10 px-3 py-1 text-sm text-accent">
-                  Production
+                  <p className="text-sm uppercase tracking-[0.14em] text-accent">Current Role</p>
+                  <p className="text-text-primary font-semibold">Senior ML Engineer | Senior Data Scientist</p>
                 </div>
               </div>
 
@@ -126,27 +97,16 @@ export function Hero() {
                   <div className="text-4xl font-bold text-text-primary">13+</div>
                   <div className="mt-2 text-sm uppercase tracking-[0.15em] text-text-tertiary">Years</div>
                   <p className="mt-3 text-sm leading-6 text-text-secondary">
-                    <b>2012-2016:</b> Backend (Java) Engineering → Team Lead<br/>
-                    <b>2016-2020:</b> PhD (ML) + Team Leadership<br/>
-                    <b>2020-2026:</b> Enterprise AI Systems at scale in Lufthansa Group
+                    Software engineering, data analytics, and machine learning.
                   </p>
                 </div>
                 <div className="rounded-2xl border border-border bg-surface/80 p-5">
                   <div className="text-4xl font-bold text-text-primary">4</div>
-                  <div className="mt-2 text-sm uppercase tracking-[0.15em] text-text-tertiary">Featured Production Systems</div>
+                  <div className="mt-2 text-sm uppercase tracking-[0.15em] text-text-tertiary">Production Systems</div>
                   <p className="mt-3 text-sm leading-6 text-text-secondary">
-                    Recent flagship projects: Search, RAG, MLOps, Forecasting. 10K QPS, 2M embeddings, 40ms P99 latency.
+                    Search, RAG, MLOps, and forecasting for enterprise operations.
                   </p>
                 </div>
-              </div>
-
-              <div className="mt-4 rounded-2xl border border-border bg-surface/60 p-5">
-                <p className="text-sm uppercase tracking-[0.2em] text-text-tertiary">Proven Impact</p>
-                <ul className="mt-4 space-y-3 text-sm leading-6 text-text-secondary">
-                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent" />18% support call reduction = $420K annual savings</li>
-                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent" />45% search satisfaction improvement (62% → 90%)</li>
-                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent" />98% deployment time reduction (weeks → hours)</li>
-                </ul>
               </div>
             </div>
           </div>

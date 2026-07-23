@@ -1,12 +1,12 @@
 export const SITE_CONFIG = {
   name: 'Dr. Santhoshkumar',
   fullName: 'Dr. Santhoshkumar',
-  title: 'Senior ML Engineer',
-  tagline: 'Architecting enterprise AI systems: search, RAG, and MLOps platforms serving millions with 40ms P99 latency',
+  title: 'Senior ML Engineer | Senior Data Scientist',
+  tagline: 'Senior ML Engineer and Senior Data Scientist building enterprise search, RAG, and MLOps systems',
   description:
-    'I architect enterprise AI systems at scale. I reduce time-to-production from months to days through reusable ML infrastructure, turn research insights into enterprise systems, and own end-to-end delivery from requirements through operations.',
+    'I build enterprise search, RAG, and MLOps systems from evaluation and architecture through monitored delivery.',
   company: 'Eurowings Digital GmbH',
-  currentRole: 'Senior ML Engineer / Data Scientist',
+  currentRole: 'Senior ML Engineer | Senior Data Scientist',
   location: 'Europe | Remote',
   email: 'santhoshramuk@gmail.com',
   url: 'https://santhosh790.github.io',
@@ -17,10 +17,10 @@ export const CAREER_METRICS = {
   experienceLabel: 'Years Experience',
   systems: '4',
   systemsLabel: 'Production AI Systems',
-  llmApps: '3',
-  llmAppsLabel: 'LLM Applications',
-  focus: 'Enterprise',
-  focusLabel: 'MLOps Projects',
+  llmApps: '1',
+  llmAppsLabel: 'Open-Source AI Agent',
+  focus: 'Ph.D.',
+  focusLabel: 'Machine Learning',
 } as const
 
 export const SOCIAL_LINKS = {
@@ -808,15 +808,15 @@ export const TECH_STACK = {
 export const LEADERSHIP_HIGHLIGHTS = [
   {
     title: 'PhD in Machine Learning',
-    detail: 'VIT, Vellore · 2020 · GPA 9/10',
+    detail: 'Vellore Institute of Technology · 2020',
     description:
       'Completed doctoral research on rumor detection and control with deep learning.',
   },
   {
     title: '10+ Years Team Leadership',
-    detail: 'From Software Teams to ML Teams · 2016-Present',
+    detail: 'Software, Data Analytics, and ML · 2016-Present',
     description:
-      'Led software delivery teams (2016-2020), then transitioned to leading ML engineering teams—[cross-functional teams] building production AI systems (2020-present).',
+      'Led delivery teams across software engineering, data analytics, and machine learning. Coordinated across product, engineering, and support to deliver customer-facing platforms.',
   },
   {
     title: '13+ Years in Industry',

@@ -14,11 +14,9 @@ export function ProfessionalSummary() {
 
       <div className="mx-auto max-w-4xl">
         <div className="rounded-2xl border border-border bg-surface/60 p-8 md:p-10">
-          {/* Quick Facts - Always Visible */}
           <div className="mb-6 rounded-xl border border-accent/20 bg-accent/5 p-6">
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-2xl">⚡</span>
-              <h3 className="text-heading-3 font-bold text-text-primary">Quick Facts</h3>
+              <h3 className="text-heading-3 font-bold text-text-primary">Profile</h3>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               <div>
@@ -30,8 +28,8 @@ export function ProfessionalSummary() {
                 <div className="text-xs text-text-tertiary mt-1">Machine Learning</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-accent">5</div>
-                <div className="text-xs text-text-tertiary mt-1">AI Systems</div>
+                <div className="text-2xl font-bold text-accent">4</div>
+                <div className="text-xs text-text-tertiary mt-1">Production Systems</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-accent">Azure</div>
@@ -40,20 +38,18 @@ export function ProfessionalSummary() {
             </div>
           </div>
 
-          {/* Main Hook - Always Visible */}
           <p className="text-heading-3 text-text-primary font-semibold leading-relaxed mb-4">
-            Most AI prototypes never become successful products. My passion is turning innovative ideas into reliable production systems.
+            I build and operate enterprise AI systems for search, customer support, and ML delivery.
           </p>
 
           <p className="text-body-lg text-text-secondary leading-relaxed">
             <strong className="text-text-primary">Specialization:</strong> Semantic Search • RAG • MLOps • Forecasting • AI Platforms
           </p>
 
-          {/* Expandable Detailed Content */}
           {isExpanded && (
             <div className="mt-6 space-y-6 animate-slide-up">
               <p className="text-body-lg text-text-secondary leading-relaxed">
-                I design and deliver <strong className="text-text-primary">production-grade AI solutions</strong> that transform complex business problems into measurable outcomes. With{' '}
+                I design and deliver <strong className="text-text-primary">scalable AI solutions</strong> that transform complex business problems into measurable outcomes. With{' '}
                 <strong className="text-text-primary">13+ years of industry experience spanning software engineering, machine learning, and AI systems</strong>, and a{' '}
                 <strong className="text-text-primary">Ph.D. in Machine Learning</strong>, I specialize in developing enterprise AI platforms including semantic search, retrieval-augmented generation (RAG), forecasting solutions, and MLOps systems that improve customer experience while operating reliably at scale.
               </p>
@@ -69,12 +65,11 @@ export function ProfessionalSummary() {
             </div>
           )}
 
-          {/* Read More/Less Button */}
           <button
             onClick={() => setIsExpanded(!isExpanded)}
             className="mt-6 flex items-center gap-2 text-accent hover:text-accent/80 font-semibold transition-colors"
           >
-            <span>{isExpanded ? 'Read Less' : 'Read Full Story'}</span>
+            <span>{isExpanded ? 'Show less' : 'Read more'}</span>
             <svg
               className={`w-4 h-4 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}
               fill="none"

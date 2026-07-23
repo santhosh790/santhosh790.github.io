@@ -1,5 +1,4 @@
 import { Hero } from '@/components/Hero'
-import { MetricsDashboard } from '@/components/MetricsDashboard'
 import { ProfessionalSummary } from '@/components/ProfessionalSummary'
 import { EngineeringPhilosophy } from '@/components/EngineeringPhilosophy'
 import { FeaturedProjects } from '@/components/FeaturedProjects'
@@ -18,7 +17,6 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <MetricsDashboard />
       <ProfessionalSummary />
       <EngineeringPhilosophy />
       <FeaturedProjects />

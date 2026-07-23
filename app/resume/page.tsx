@@ -39,7 +39,7 @@ export default function ResumePage() {
           <h2 className="text-heading-1 font-bold text-text-primary mb-4">Professional Summary</h2>
           <div className="space-y-4 text-body-lg text-text-secondary leading-relaxed">
             <p>
-              I design and deliver <strong className="text-text-primary">production-grade AI systems</strong> that solve complex business problems at enterprise scale. My expertise lies in building reliable semantic search, retrieval-augmented generation (RAG), and MLOps platforms that improve customer experience while meeting strict requirements for scalability, latency, governance, and operational reliability.
+              I design and deliver <strong className="text-text-primary">reliable AI systems</strong> that solve complex business problems at enterprise scale. My expertise lies in building semantic search, retrieval-augmented generation (RAG), and MLOps platforms that improve customer experience while meeting strict requirements for scalability, latency, governance, and operational reliability.
             </p>
             <p>
               At <strong className="text-text-primary">Eurowings (Lufthansa Group)</strong>, I have designed and delivered enterprise AI platforms that contributed to an <strong className="text-text-primary">18% reduction in customer support calls</strong>, a <strong className="text-text-primary">45% improvement in search satisfaction</strong>, and significantly accelerated machine learning deployment through standardized MLOps practices.
@@ -150,7 +150,7 @@ export default function ResumePage() {
                 <h3 className="text-heading-2 font-bold text-text-primary">Senior Consultant (SC2)</h3>
                 <p className="text-body-lg text-accent font-semibold mt-1">Hitachi Vantara (Hitachi Data Systems)</p>
               </div>
-              <p className="text-body text-text-tertiary mt-2 md:mt-0">July 2020 – July 2022 | Pune, India</p>
+              <p className="text-body text-text-tertiary mt-2 md:mt-0">July 2020 – Jan 2022 | Pune, India</p>
             </div>
             <ul className="space-y-3 text-body text-text-secondary">
               <li className="flex items-start">

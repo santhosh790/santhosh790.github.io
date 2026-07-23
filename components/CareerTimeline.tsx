@@ -23,8 +23,8 @@ const CAREER_TIMELINE: TimelineEntry[] = [
     period: 'Current',
     roles: [
       {
-        title: 'Senior ML Engineer / Data Scientist',
-        period: 'Feb 2022 – Present',
+        title: 'Senior ML Engineer | Senior Data Scientist',
+        period: 'July 2022 – Present',
         description:
           'Led development of enterprise AI systems including semantic search, RAG chatbots, MLOps platform, and forecasting pipelines. Technical lead for AI initiatives involving cross-functional teams (Product, Engineering, Support). Architected and deployed production systems serving millions of customers.',
         tags: ['Semantic Search', 'RAG', 'MLOps', 'Azure Databricks', 'GPT-4', 'Team Leadership'],
@@ -39,7 +39,7 @@ const CAREER_TIMELINE: TimelineEntry[] = [
     roles: [
       {
         title: 'Senior Consultant (SC2)',
-        period: 'July 2020 – July 2022',
+        period: 'July 2020 – Jun 2022',
         description:
           'Contributed to enterprise data analytics initiatives. Led cross-functional teams across analytics and machine learning models. Successfully delivered enterprise analytics solutions for global customers and led multidisciplinary teams to complete projects within scope and timelines.',
         tags: ['Java', 'AWS', 'AWS EC2', 'Scikit-learn', 'ML Models', 'AEM', 'Team Leadership'],
@@ -113,7 +113,7 @@ export function CareerTimeline() {
       <SectionHeader>
         <SectionTitle>Career Journey</SectionTitle>
         <SectionSubtitle>
-          14+ years building ML systems: from research to production-grade enterprise AI platforms
+          13+ years building ML systems: from research to enterprise AI platforms at scale
         </SectionSubtitle>
       </SectionHeader>
 
@@ -208,7 +208,7 @@ export function CareerTimeline() {
       {/* Summary Stats */}
       <div className="mt-12 mx-auto max-w-4xl grid grid-cols-2 md:grid-cols-4 gap-6">
         <div className="rounded-xl border border-accent/20 bg-accent/5 p-6 text-center">
-          <div className="text-3xl font-bold text-accent">14+</div>
+          <div className="text-3xl font-bold text-accent">13+</div>
           <div className="mt-2 text-xs text-text-tertiary uppercase tracking-wider">Years</div>
         </div>
         <div className="rounded-xl border border-accent/20 bg-accent/5 p-6 text-center">
@@ -217,7 +217,7 @@ export function CareerTimeline() {
         </div>
         <div className="rounded-xl border border-accent/20 bg-accent/5 p-6 text-center">
           <div className="text-3xl font-bold text-accent">5</div>
-          <div className="mt-2 text-xs text-text-tertiary uppercase tracking-wider">AI Systems</div>
+          <div className="mt-2 text-xs text-text-tertiary uppercase tracking-wider">Systems Shipped</div>
         </div>
         <div className="rounded-xl border border-accent/20 bg-accent/5 p-6 text-center">
           <div className="text-3xl font-bold text-accent">10+</div>
