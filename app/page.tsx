@@ -1,13 +1,13 @@
 import { Hero } from '@/components/Hero'
+import { MetricsDashboard } from '@/components/MetricsDashboard'
 import { ProfessionalSummary } from '@/components/ProfessionalSummary'
 import { EngineeringPhilosophy } from '@/components/EngineeringPhilosophy'
 import { FeaturedProjects } from '@/components/FeaturedProjects'
-import { LeadershipDelivery } from '@/components/LeadershipDelivery'
+import { Leadership } from '@/components/Leadership'
+import { CareerTimeline } from '@/components/CareerTimeline'
 import { OpenSourceProjects } from '@/components/OpenSourceProjects'
 import { CurrentlyExploring } from '@/components/CurrentlyExploring'
 import { CareerHighlights } from '@/components/CareerHighlights'
-import { LeadershipProof } from '@/components/LeadershipProof'
-import { ExperienceTimeline } from '@/components/ExperienceTimeline'
 import { SpeakingAndCredentials } from '@/components/SpeakingAndCredentials'
 import { TechStack } from '@/components/TechStack'
 import { BlogPreview } from '@/components/BlogPreview'
@@ -18,15 +18,15 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <MetricsDashboard />
       <ProfessionalSummary />
       <EngineeringPhilosophy />
       <FeaturedProjects />
-      <LeadershipDelivery />
+      <Leadership />
+      <CareerTimeline />
       <OpenSourceProjects />
       <CurrentlyExploring />
       <CareerHighlights />
-      <LeadershipProof />
-      <ExperienceTimeline />
       <SpeakingAndCredentials />
       <TechStack />
       <BlogPreview />

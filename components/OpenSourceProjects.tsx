@@ -20,19 +20,19 @@ export function OpenSourceProjects() {
           <Card
             key={project.id}
             hover
-            className="animate-slide-up overflow-hidden rounded-[1.75rem]"
+            className="animate-slide-up overflow-hidden rounded-[1.75rem] transition-all hover:scale-[1.03] hover:shadow-lg"
             style={{ animationDelay: `${index * 0.1}s` }}
           >
             <CardHeader>
               <div className="mb-3 flex items-center justify-between">
-                <Badge variant="secondary" className="text-xs">
+                <Badge variant="secondary" className="text-xs flex items-center gap-1">
                   {project.category === 'utilities' ? '🔧 DevTools' : '📊 Data Engineering'}
                 </Badge>
                 <a
                   href={project.links[0]?.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-text-tertiary hover:text-accent transition-colors"
+                  className="text-text-tertiary hover:text-accent transition-all hover:scale-110"
                   aria-label="View on GitHub"
                 >
                   <svg
@@ -56,14 +56,14 @@ export function OpenSourceProjects() {
             <CardContent>
               <p className="mb-4 text-sm leading-6 text-text-secondary">{project.description}</p>
 
-              <div className="mb-4 rounded-xl border border-border bg-background/60 px-3 py-3">
-                <h4 className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-text-tertiary">
-                  Impact
+              <div className="mb-4 rounded-xl border border-accent/20 bg-accent/5 px-3 py-3">
+                <h4 className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-accent flex items-center gap-2">
+                  <span>✨</span> Impact
                 </h4>
                 <ul className="space-y-1.5">
                   {project.impact.map((item, i) => (
                     <li key={i} className="flex items-start text-xs leading-5 text-text-secondary">
-                      <span className="mr-2 text-accent">•</span>
+                      <span className="mr-2 text-accent">✓</span>
                       {item}
                     </li>
                   ))}

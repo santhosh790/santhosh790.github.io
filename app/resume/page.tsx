@@ -45,7 +45,7 @@ export default function ResumePage() {
               At <strong className="text-text-primary">Eurowings (Lufthansa Group)</strong>, I have designed and delivered enterprise AI platforms that contributed to an <strong className="text-text-primary">18% reduction in customer support calls</strong>, a <strong className="text-text-primary">45% improvement in search satisfaction</strong>, and significantly accelerated machine learning deployment through standardized MLOps practices.
             </p>
             <p>
-              My background combines <strong className="text-text-primary">15+ years of software engineering</strong>, a <strong className="text-text-primary">Ph.D. in Machine Learning</strong>, and extensive hands-on experience building AI systems on <strong className="text-text-primary">Azure</strong> and <strong className="text-text-primary">Databricks</strong>. I enjoy turning ambiguous business requirements into measurable, production-ready AI solutions.
+              My background combines <strong className="text-text-primary">14+ years of software engineering</strong>, a <strong className="text-text-primary">Ph.D. in Machine Learning</strong>, and extensive hands-on experience building AI systems on <strong className="text-text-primary">Azure</strong> and <strong className="text-text-primary">Databricks</strong>. I enjoy turning ambiguous business requirements into measurable, production-ready AI solutions.
             </p>
             <p className="text-text-primary font-semibold">
               <strong>Current Focus:</strong> Semantic Search • Retrieval-Augmented Generation (RAG) • Agentic AI • Enterprise MLOps • AI Platform Engineering
@@ -67,7 +67,7 @@ export default function ResumePage() {
               <tbody>
                 <tr className="border-b border-border">
                   <td className="p-4 text-body-lg text-text-primary font-medium">Enterprise Semantic Search Platform</td>
-                  <td className="p-4 text-body text-text-secondary">Reduced customer support calls by <strong className="text-text-primary">18%</strong> and improved search satisfaction by <strong className="text-text-primary">45%</strong></td>
+                  <td className="p-4 text-body text-text-secondary"><strong className="text-text-primary">109% lift in search relevance</strong>, recall improved from <strong className="text-text-primary">50% to 75%+</strong>, <strong className="text-text-primary">67% lower latency (6s → 2s)</strong>, 18% fewer support calls</td>
                 </tr>
                 <tr className="border-b border-border">
                   <td className="p-4 text-body-lg text-text-primary font-medium">Enterprise RAG Customer Support Assistant</td>
@@ -99,7 +99,7 @@ export default function ResumePage() {
                 <h3 className="text-heading-2 font-bold text-text-primary">Senior Machine Learning Engineer / Senior Data Scientist</h3>
                 <p className="text-body-lg text-accent font-semibold mt-1">Eurowings Digital GmbH (Lufthansa Group)</p>
               </div>
-              <p className="text-body text-text-tertiary mt-2 md:mt-0">2020 – Present | Europe (Remote)</p>
+              <p className="text-body text-text-tertiary mt-2 md:mt-0">Feb 2022 – Present | Europe (Remote)</p>
             </div>
             <ul className="space-y-3 text-body text-text-secondary">
               <li className="flex items-start">
@@ -112,7 +112,7 @@ export default function ResumePage() {
               </li>
               <li className="flex items-start">
                 <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
-                <span>Contributed to an <strong className="text-text-primary">18% reduction in customer support calls</strong> and a <strong className="text-text-primary">45% improvement in customer search satisfaction</strong> through production AI search capabilities.</span>
+                <span>Achieved <strong className="text-text-primary">109% lift in search relevance</strong>, improved recall from <strong className="text-text-primary">50% to 75%+</strong>, reduced latency from <strong className="text-text-primary">6 seconds to under 2 seconds (67% improvement)</strong>, contributing to 18% fewer support calls.</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
@@ -143,61 +143,128 @@ export default function ResumePage() {
             </div>
           </div>
 
-          {/* PhD Researcher */}
+          {/* Hitachi Vantara */}
           <div className="mb-10">
             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
               <div>
-                <h3 className="text-heading-2 font-bold text-text-primary">Ph.D. Researcher (Machine Learning) & Technical Team Lead</h3>
-                <p className="text-body-lg text-accent font-semibold mt-1">VIT University</p>
+                <h3 className="text-heading-2 font-bold text-text-primary">Senior Consultant (SC2)</h3>
+                <p className="text-body-lg text-accent font-semibold mt-1">Hitachi Vantara (Hitachi Data Systems)</p>
               </div>
-              <p className="text-body text-text-tertiary mt-2 md:mt-0">2016 – 2020</p>
+              <p className="text-body text-text-tertiary mt-2 md:mt-0">July 2020 – July 2022 | Pune, India</p>
             </div>
             <ul className="space-y-3 text-body text-text-secondary">
               <li className="flex items-start">
                 <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
-                <span>Conducted doctoral research on <strong className="text-text-primary">early rumor detection and mitigation</strong> in online social networks using deep learning, neuro-fuzzy systems, and bio-inspired optimization techniques.</span>
+                <span>Contributed to <strong className="text-text-primary">enterprise data analytics initiatives</strong>, delivering analytics solutions for global customers.</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
-                <span>Published multiple peer-reviewed papers in international journals and conferences.</span>
+                <span>Led <strong className="text-text-primary">cross-functional teams</strong> across analytics and machine learning models, ensuring successful project delivery within scope and timelines.</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
-                <span>Developed expertise in <strong className="text-text-primary">deep learning, graph analytics, experimentation, and scientific evaluation methodologies</strong>, which continue to influence my production AI engineering work.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
-                <span>Simultaneously served as a <strong className="text-text-primary">technical lead</strong>, mentoring software engineers and coordinating engineering activities across academic and industry collaborations.</span>
+                <span>Successfully delivered enterprise analytics solutions for global customers with strong emphasis on quality and stakeholder collaboration.</span>
               </li>
             </ul>
+            <div className="mt-4">
+              <p className="text-sm font-semibold text-text-tertiary uppercase tracking-wider mb-2">Technologies</p>
+              <p className="text-body text-text-secondary">
+                Java • AWS • AWS EC2 • Scikit-learn • ML Models • Adobe Experience Manager (AEM)
+              </p>
+            </div>
           </div>
 
-          {/* Backend Software Engineer */}
+          {/* Relevance Lab */}
           <div className="mb-10">
             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
               <div>
-                <h3 className="text-heading-2 font-bold text-text-primary">Backend Software Engineer → Technical Team Lead</h3>
+                <h3 className="text-heading-2 font-bold text-text-primary">Team Lead</h3>
+                <p className="text-body-lg text-accent font-semibold mt-1">Relevance Lab</p>
               </div>
-              <p className="text-body text-text-tertiary mt-2 md:mt-0">2012 – 2016</p>
+              <p className="text-body text-text-tertiary mt-2 md:mt-0">Apr 2016 – July 2020 | Bangalore, India</p>
             </div>
             <ul className="space-y-3 text-body text-text-secondary">
               <li className="flex items-start">
                 <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
-                <span>Designed and developed enterprise web applications using Java, Spring, REST APIs, and Adobe Experience Manager (AEM).</span>
+                <span>Led a team of <strong className="text-text-primary">10+ professionals</strong> across project planning, execution, and delivery.</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
-                <span>Led engineering teams delivering customer-facing enterprise applications with strong emphasis on performance, maintainability, and security.</span>
+                <span>Coordinated <strong className="text-text-primary">stakeholder communication</strong> and mentored team members to ensure consistent delivery quality.</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
-                <span>Designed scalable backend services, API integrations, and content management solutions for enterprise customers.</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
-                <span>Built a strong foundation in distributed systems, software architecture, and engineering leadership that later enabled the transition into production AI systems.</span>
+                <span>Ensured quality standards and delivery timelines were consistently met across multiple concurrent projects.</span>
               </li>
             </ul>
+            <div className="mt-4">
+              <p className="text-sm font-semibold text-text-tertiary uppercase tracking-wider mb-2">Technologies</p>
+              <p className="text-body text-text-secondary">
+                Java • Kafka • Docker • AWS • AWS S3 • AWS EC2
+              </p>
+            </div>
+          </div>
+
+          {/* Sapient */}
+          <div className="mb-10">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
+              <div>
+                <h3 className="text-heading-2 font-bold text-text-primary">Associate Technology L2</h3>
+                <p className="text-body-lg text-accent font-semibold mt-1">Sapient</p>
+              </div>
+              <p className="text-body text-text-tertiary mt-2 md:mt-0">Sept 2014 – Apr 2016 | Bangalore, India</p>
+            </div>
+            <ul className="space-y-3 text-body text-text-secondary">
+              <li className="flex items-start">
+                <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
+                <span>Developed <strong className="text-text-primary">web applications</strong> using Adobe Experience Manager (AEM), delivering enterprise digital experience platforms.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
+                <span>Built backend services with Java and front-end solutions with JavaScript, HTML, and CSS.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
+                <span>Contributed to enterprise digital experience platform delivery for global clients.</span>
+              </li>
+            </ul>
+            <div className="mt-4">
+              <p className="text-sm font-semibold text-text-tertiary uppercase tracking-wider mb-2">Technologies</p>
+              <p className="text-body text-text-secondary">
+                Java • AWS • Adobe Experience Manager (AEM) • JavaScript • HTML • CSS
+              </p>
+            </div>
+          </div>
+
+          {/* Cognizant */}
+          <div className="mb-10">
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
+              <div>
+                <h3 className="text-heading-2 font-bold text-text-primary">Programmer Analyst</h3>
+                <p className="text-body-lg text-accent font-semibold mt-1">Cognizant</p>
+              </div>
+              <p className="text-body text-text-tertiary mt-2 md:mt-0">Dec 2012 – Aug 2014 | Chennai, India</p>
+            </div>
+            <ul className="space-y-3 text-body text-text-secondary">
+              <li className="flex items-start">
+                <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
+                <span>Developed <strong className="text-text-primary">enterprise Java applications</strong> and web services for global enterprise clients.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
+                <span>Built scalable backend systems and contributed to full-stack development projects.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
+                <span>Gained foundational experience in enterprise software development, establishing the technical foundation for later engineering leadership roles.</span>
+              </li>
+            </ul>
+            <div className="mt-4">
+              <p className="text-sm font-semibold text-text-tertiary uppercase tracking-wider mb-2">Technologies</p>
+              <p className="text-body text-text-secondary">
+                Java • AWS • Adobe Experience Manager (AEM) • Web Services
+              </p>
+            </div>
           </div>
         </section>
 
@@ -206,19 +273,63 @@ export default function ResumePage() {
         {/* Education */}
         <section className="mb-12">
           <h2 className="text-display-3 font-bold text-text-primary mb-8">Education</h2>
-          <div className="rounded-2xl border border-border bg-surface/60 p-6">
-            <h3 className="text-heading-2 font-bold text-text-primary">Ph.D. in Machine Learning</h3>
-            <p className="text-body-lg text-accent font-semibold mt-1">VIT University, India</p>
-            <p className="text-body text-text-tertiary mt-1">2020</p>
-            <div className="mt-4">
-              <p className="text-body font-semibold text-text-primary mb-2">Thesis</p>
-              <p className="text-body text-text-secondary italic">
-                Rumor Detection and Mitigation in Online Social Networks using Deep Learning and Hybrid Machine Learning Models
-              </p>
+          <div className="space-y-6">
+            <div className="rounded-2xl border border-border bg-surface/60 p-6">
+              <h3 className="text-heading-2 font-bold text-text-primary">Ph.D. in Information Technology</h3>
+              <p className="text-body-lg text-accent font-semibold mt-1">Vellore Institute of Technology (VIT), India</p>
+              <p className="text-body text-text-tertiary mt-1">2014 – 2020</p>
+              <div className="mt-4">
+                <p className="text-body font-semibold text-text-primary mb-2">Research Focus</p>
+                <p className="text-body text-text-secondary">
+                  Machine Learning research on rumor control in online social networks using neural networks and bio-inspired algorithms. Published multiple papers in Scopus-indexed journals.
+                </p>
+              </div>
             </div>
-            <p className="text-body text-text-secondary mt-4">
-              GPA: <strong className="text-text-primary">9.0 / 10</strong>
-            </p>
+            <div className="rounded-2xl border border-border bg-surface/60 p-6">
+              <h3 className="text-heading-2 font-bold text-text-primary">Master's Degree in Software Engineering</h3>
+              <p className="text-body-lg text-accent font-semibold mt-1">Vellore Institute of Technology (VIT), India</p>
+              <p className="text-body text-text-tertiary mt-1">2007 – 2012</p>
+              <div className="mt-4">
+                <p className="text-body text-text-secondary">
+                  Advanced study in software engineering, algorithms, and system design.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr className="border-border mb-12" />
+
+        {/* Certifications */}
+        <section className="mb-12">
+          <h2 className="text-display-3 font-bold text-text-primary mb-8">Professional Certifications</h2>
+          <div className="grid gap-4 md:grid-cols-2">
+            <div className="rounded-2xl border border-border bg-surface/60 p-5">
+              <p className="text-body-lg text-text-primary font-semibold">Academy Accreditation - Generative AI Fundamentals</p>
+              <p className="text-body text-accent mt-1">Databricks</p>
+              <p className="text-body text-text-tertiary text-sm mt-1">Issued May 2026 • Credential ID: 182259131</p>
+            </div>
+            <div className="rounded-2xl border border-border bg-surface/60 p-5">
+              <p className="text-body-lg text-text-primary font-semibold">Working Effectively with Stakeholders</p>
+              <p className="text-body text-accent mt-1">Google</p>
+              <p className="text-body text-text-tertiary text-sm mt-1">Issued Mar 2026 • Credential ID: RUCTG2BDI44Q</p>
+            </div>
+            <div className="rounded-2xl border border-border bg-surface/60 p-5">
+              <p className="text-body-lg text-text-primary font-semibold">Deep Learning Specialization</p>
+              <p className="text-body text-accent mt-1">Coursera</p>
+            </div>
+            <div className="rounded-2xl border border-border bg-surface/60 p-5">
+              <p className="text-body-lg text-text-primary font-semibold">Mathematics for Machine Learning Specialization</p>
+              <p className="text-body text-accent mt-1">Coursera</p>
+            </div>
+            <div className="rounded-2xl border border-border bg-surface/60 p-5">
+              <p className="text-body-lg text-text-primary font-semibold">Oracle Certified Java Developer</p>
+              <p className="text-body text-accent mt-1">Oracle</p>
+            </div>
+            <div className="rounded-2xl border border-border bg-surface/60 p-5">
+              <p className="text-body-lg text-text-primary font-semibold">Adobe Certified AEM Development Expert</p>
+              <p className="text-body text-accent mt-1">Adobe</p>
+            </div>
           </div>
         </section>
 

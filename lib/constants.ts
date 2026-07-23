@@ -60,7 +60,7 @@ export const FEATURED_PROJECTS = [
     tagline: 'Enterprise search powered by embeddings, retrieval, and LLMs',
     description:
       'Built an onsite search and FAQ discovery platform for airline e-commerce, handling natural-language search, multilingual queries, and hybrid retrieval at customer scale.',
-    impact: ['18% fewer support calls', '45% higher satisfaction', '40% lower latency'],
+    impact: ['109% lift in search relevance', 'Recall improved from 50% to 75%+', '67% lower latency (6s → 2s)', '18% fewer support calls'],
     tags: ['Semantic Search', 'RAG', 'Vector Search', 'GPT-4', 'LlamaIndex', 'Databricks'],
     category: 'flagship',
     featured: true,
@@ -83,9 +83,11 @@ export const FEATURED_PROJECTS = [
       'Added offline golden-set evaluation and canary rollback after an embedding-model update hurt recall.',
     ],
     outcomes: [
+      '109% lift in search relevance',
+      'Improved recall from 50% to 75%+',
+      'Reduced latency from 6 seconds to under 2 seconds (67% improvement)',
       '18% reduction in customer support calls',
       '45% increase in search satisfaction',
-      '40% reduction in average latency',
       'Higher self-service engagement for baggage, cancellation, and check-in content',
     ],
     ownership: {
@@ -95,6 +97,36 @@ export const FEATURED_PROJECTS = [
       scope: 'End-to-end ownership: requirements → architecture → production operations',
       collaboration: ['Product', 'Support', 'Legal', 'Marketing'],
       mentorship: 'Onboarded 2 junior ML engineers to production Databricks workflows',
+    },
+    architectureDiagram: {
+      title: 'AI Search System Architecture',
+      description: 'End-to-end flow from user query through hybrid retrieval to LLM-powered answer generation',
+      mermaidCode: `graph TB
+    A[User Query] --> B[Query Understanding]
+    B --> C{Language Detection}
+    C --> D[Spelling Correction]
+    D --> E[Intent Extraction]
+    
+    E --> F[Hybrid Search]
+    F --> G[BM25 Keyword Search]
+    F --> H[Vector Similarity Search]
+    
+    G --> I[Score Fusion & Reranking]
+    H --> I
+    
+    I --> J{Confidence Score}
+    J -->|High| K[LLM Summarization]
+    J -->|Low| L[Return Top Results]
+    
+    K --> M[GPT-4 Answer Generation]
+    M --> N[Response with Citations]
+    
+    L --> N
+    
+    style A fill:#e1f5ff
+    style N fill:#d4edda
+    style K fill:#fff3cd
+    style J fill:#f8d7da`,
     },
     links: [
       {
@@ -151,6 +183,40 @@ export const FEATURED_PROJECTS = [
       collaboration: ['Product', 'Customer Support', 'Legal (compliance review)'],
       mentorship: 'Trained team on prompt engineering and LLM evaluation best practices',
     },
+    architectureDiagram: {
+      title: 'Enterprise RAG Customer Support Architecture',
+      description: 'Conversational AI with retrieval-augmented generation, session memory, and fallback escalation',
+      mermaidCode: `graph TB
+    A[Customer Question] --> B[Session Context Manager]
+    B --> C[Query Reformulation]
+    
+    C --> D[Hybrid Search]
+    D --> E[FAQ Database]
+    D --> F[Policy Documents]
+    D --> G[Support Content]
+    
+    E --> H[Retrieved Context]
+    F --> H
+    G --> H
+    
+    H --> I[Relevance Scoring]
+    I --> J{Confidence Check}
+    
+    J -->|High| K[GPT-4 with Citations]
+    J -->|Low| L[Escalation to Human Support]
+    
+    K --> M[Answer with Sources]
+    M --> N[Feedback Collection]
+    
+    L --> O[Support Queue]
+    
+    N --> P[Evaluation & Monitoring]
+    
+    style A fill:#e1f5ff
+    style K fill:#fff3cd
+    style M fill:#d4edda
+    style L fill:#f8d7da`,
+    },
     links: [
       {
         label: 'Related search engineering writing',
@@ -201,6 +267,42 @@ export const FEATURED_PROJECTS = [
       scope: 'Owned platform architecture, CI/CD pipelines, governance strategy, team onboarding',
       collaboration: ['Data Science teams (6 teams)', 'DevOps', 'Security', 'Compliance'],
       mentorship: 'Onboarded 12+ engineers across teams to MLOps platform and best practices',
+    },
+    architectureDiagram: {
+      title: 'Enterprise MLOps Platform Architecture',
+      description: 'Governed ML deployment pipeline with CI/CD, registry, and monitoring on Azure Databricks',
+      mermaidCode: `graph TB
+    A[Data Scientists] --> B[Git Repository]
+    B --> C[Azure DevOps Pipeline]
+    
+    C --> D[Model Training]
+    D --> E[Databricks MLflow Tracking]
+    
+    E --> F[Model Registry]
+    F --> G[Unity Catalog Governance]
+    
+    G --> H{Approval Gate}
+    H -->|Approved| I[Staging Environment]
+    H -->|Rejected| J[Back to Development]
+    
+    I --> K[Integration Tests]
+    K --> L{Test Results}
+    
+    L -->|Pass| M[Production Deployment]
+    L -->|Fail| J
+    
+    M --> N[Serving Endpoints]
+    N --> O[Feature Store]
+    
+    N --> P[Monitoring Dashboard]
+    P --> Q[Drift Detection]
+    P --> R[Latency Tracking]
+    P --> S[Quality Metrics]
+    
+    style A fill:#e1f5ff
+    style M fill:#d4edda
+    style G fill:#fff3cd
+    style H fill:#f8d7da`,
     },
     links: [],
   },
@@ -791,6 +893,20 @@ export const SPEAKING = [
 ] as const
 
 export const CERTIFICATIONS = [
+  {
+    title: 'Academy Accreditation - Generative AI Fundamentals',
+    issuer: 'Databricks',
+    date: 'May 2026',
+    credentialId: '182259131',
+    link: 'https://credentials.databricks.com/b4056721-c589-4581-ba1a-d1c21000c39a',
+  },
+  {
+    title: 'Working Effectively with Stakeholders',
+    issuer: 'Google',
+    date: 'Mar 2026',
+    credentialId: 'RUCTG2BDI44Q',
+    link: 'https://www.coursera.org/account/accomplishments/records/RUCTG2BDI44Q',
+  },
   {
     title: 'Deep Learning Specialization',
     issuer: 'Coursera',

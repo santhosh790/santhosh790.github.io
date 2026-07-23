@@ -76,6 +76,12 @@ export function SpeakingAndCredentials() {
               <li key={cert.title} className="rounded-xl border border-border bg-background/60 p-4">
                 <p className="font-medium text-text-primary">{cert.title}</p>
                 <p className="text-sm text-text-tertiary">{cert.issuer}</p>
+                {'date' in cert && cert.date && (
+                  <p className="text-xs text-text-tertiary mt-1">Issued {cert.date}</p>
+                )}
+                {'credentialId' in cert && cert.credentialId && (
+                  <p className="text-xs text-text-tertiary">ID: {cert.credentialId}</p>
+                )}
                 {cert.link && (
                   <a
                     href={cert.link}
@@ -83,7 +89,7 @@ export function SpeakingAndCredentials() {
                     rel="noopener noreferrer"
                     className="mt-2 inline-block text-sm text-accent hover:text-accent-light"
                   >
-                    Verify credential
+                    Verify credential →
                   </a>
                 )}
               </li>

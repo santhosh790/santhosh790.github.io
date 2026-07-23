@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { FEATURED_PROJECTS, OPEN_SOURCE_PROJECTS, SITE_CONFIG } from '@/lib/constants'
+import { ArchitectureDiagram } from '@/components/ArchitectureDiagram'
 
 type ProjectSlug = (typeof FEATURED_PROJECTS)[number]['slug'] | (typeof OPEN_SOURCE_PROJECTS)[number]['slug']
 
@@ -103,6 +104,15 @@ export default function ProjectPage({ params }: { params: { slug: ProjectSlug } 
                   </li>
                 ))}
               </ul>
+              
+              {/* Architecture Diagram */}
+              {'architectureDiagram' in project && project.architectureDiagram && (
+                <ArchitectureDiagram
+                  title={project.architectureDiagram.title}
+                  description={project.architectureDiagram.description}
+                  mermaidCode={project.architectureDiagram.mermaidCode}
+                />
+              )}
             </section>
           )}
 
