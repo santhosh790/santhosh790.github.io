@@ -2,11 +2,11 @@ export const SITE_CONFIG = {
   name: 'Dr. Santhoshkumar',
   fullName: 'Dr. Santhoshkumar',
   title: 'Senior ML Engineer | Senior Data Scientist',
-  tagline: 'Senior ML Engineer and Senior Data Scientist building enterprise search, RAG, and MLOps systems',
+  tagline: 'Architecting enterprise AI systems: search, RAG, and MLOps platforms serving millions with 40ms P99 latency',
   description:
-    'I build enterprise search, RAG, and MLOps systems from evaluation and architecture through monitored delivery.',
+    'I architect enterprise AI systems at scale. I reduce time-to-production from months to days through reusable ML infrastructure, turn research insights into enterprise systems, and own end-to-end delivery from requirements through operations.',
   company: 'Eurowings Digital GmbH',
-  currentRole: 'Senior ML Engineer | Senior Data Scientist',
+  currentRole: 'Senior ML Engineer / Data Scientist',
   location: 'Europe | Remote',
   email: 'santhoshramuk@gmail.com',
   url: 'https://santhosh790.github.io',
@@ -15,12 +15,12 @@ export const SITE_CONFIG = {
 export const CAREER_METRICS = {
   experience: '13+',
   experienceLabel: 'Years Experience',
-  systems: '4',
+  systems: '5',
   systemsLabel: 'Production AI Systems',
-  llmApps: '1',
-  llmAppsLabel: 'Open-Source AI Agent',
-  focus: 'Ph.D.',
-  focusLabel: 'Machine Learning',
+  llmApps: '3',
+  llmAppsLabel: 'LLM Applications',
+  focus: 'Enterprise',
+  focusLabel: 'MLOps Projects',
 } as const
 
 export const SOCIAL_LINKS = {
@@ -32,13 +32,13 @@ export const SOCIAL_LINKS = {
 } as const
 
 export const HERO_SIGNALS = [
-  'Agentic AI',
-  'LLM Systems',
-  'ML Systems',
+  'LLM & RAG',
+  'AI Agents',
   'Semantic Search',
-  'Production MLOps',
+  'MLOps & LLMOps',
   'Databricks',
   'Azure',
+  'Production ML',
 ] as const
 
 export const NAVIGATION = [
@@ -46,7 +46,7 @@ export const NAVIGATION = [
   { name: 'Enterprise AI Systems', href: '#projects' },
   { name: 'Technical Writing', href: '/blog' },
   { name: 'Open Source', href: '#open-source' },
-  { name: 'About', href: '#about' },
+  { name: 'About', href: '/about' },
   { name: 'Contact', href: '#contact' },
 ] as const
 
@@ -60,7 +60,7 @@ export const FEATURED_PROJECTS = [
     tagline: 'Enterprise search powered by embeddings, retrieval, and LLMs',
     description:
       'Built an onsite search and FAQ discovery platform for airline e-commerce, handling natural-language search, multilingual queries, and hybrid retrieval at customer scale.',
-    impact: ['109% lift in search relevance', 'Recall improved from 50% to 75%+', '67% lower latency (6s → 2s)', '18% fewer support calls'],
+    impact: ['110% search satisfaction improvement (42% → 90%)', '91% recall@10 achieved', '99.3% latency reduction (6s → 40ms P99)', '€420K annual savings (18% fewer support calls)'],
     tags: ['Semantic Search', 'RAG', 'Vector Search', 'GPT-4', 'LlamaIndex', 'Databricks'],
     category: 'flagship',
     featured: true,
@@ -83,12 +83,12 @@ export const FEATURED_PROJECTS = [
       'Added offline golden-set evaluation and canary rollback after an embedding-model update hurt recall.',
     ],
     outcomes: [
-      '109% lift in search relevance',
-      'Improved recall from 50% to 75%+',
-      'Reduced latency from 6 seconds to under 2 seconds (67% improvement)',
-      '18% reduction in customer support calls',
-      '45% increase in search satisfaction',
+      '110% improvement in search satisfaction (from 42% to 90%)',
+      'Achieved 91% recall@10 in semantic search retrieval',
+      'Reduced search latency by 99.3% (from 6 seconds to 40ms P99)',
+      '18% reduction in customer support calls, generating €420K annual cost savings',
       'Higher self-service engagement for baggage, cancellation, and check-in content',
+      'Improved multilingual query understanding across 5 European languages',
     ],
     ownership: {
       role: 'Technical Lead, Search Infrastructure',
@@ -808,15 +808,15 @@ export const TECH_STACK = {
 export const LEADERSHIP_HIGHLIGHTS = [
   {
     title: 'PhD in Machine Learning',
-    detail: 'Vellore Institute of Technology · 2020',
+    detail: 'VIT, Vellore · 2020 · GPA 9/10',
     description:
       'Completed doctoral research on rumor detection and control with deep learning.',
   },
   {
     title: '10+ Years Team Leadership',
-    detail: 'Software, Data Analytics, and ML · 2016-Present',
+    detail: 'From Software Teams to ML Teams · 2016-Present',
     description:
-      'Led delivery teams across software engineering, data analytics, and machine learning. Coordinated across product, engineering, and support to deliver customer-facing platforms.',
+      'Led software delivery teams (2016-2020), then transitioned to leading ML engineering teams building production AI systems (2020-present). Coordinated across product, engineering, and support organizations to deliver customer-facing AI platforms.'
   },
   {
     title: '13+ Years in Industry',

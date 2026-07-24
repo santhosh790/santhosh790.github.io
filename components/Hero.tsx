@@ -2,7 +2,8 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { HERO_SIGNALS, SITE_CONFIG } from '@/lib/constants'
+import Link from 'next/link'
+import { HERO_SIGNALS, SITE_CONFIG, SOCIAL_LINKS } from '@/lib/constants'
 import { Button } from '@/components/ui/Button'
 
 export function Hero() {
@@ -22,11 +23,11 @@ export function Hero() {
             </p>
 
             <p className="mt-8 max-w-3xl text-body-lg md:text-heading-3 text-text-secondary">
-              I build reliable <strong className="text-text-primary">enterprise search, RAG, and MLOps systems</strong>—from retrieval evaluation and architecture through monitored delivery.
+              I turn machine learning ideas into <strong className="text-text-primary">enterprise AI systems</strong> that customers trust and businesses rely on.
             </p>
 
             <p className="mt-6 max-w-3xl text-body-lg text-text-tertiary">
-              At <strong className="text-text-secondary">Eurowings Digital (Lufthansa Group)</strong>, I work on AI platforms that improve self-service and make ML delivery more repeatable.
+              At <strong className="text-text-secondary">Eurowings (Lufthansa Group)</strong>, I work with stakeholders through the full cycle—from ideation to production systems that millions of users depend on daily. I balance <strong className="text-text-secondary">accuracy, latency, cost, and maintainability</strong> in every AI system I build.
             </p>
 
             <div className="mt-10 rounded-2xl border border-border bg-surface/60 p-6">
@@ -34,15 +35,19 @@ export function Hero() {
               <ul className="space-y-3 text-body text-text-secondary">
                 <li className="flex items-start">
                   <span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />
-                  <span><strong className="text-text-primary">4 production AI systems</strong> across semantic search, RAG, MLOps, and forecasting</span>
+                  <span>First scalable AI application serving <strong className="text-text-primary">4 million customers daily</strong></span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />
-                  <span><strong className="text-text-primary">13+ years</strong> across software engineering, data analytics, and machine learning</span>
+                  <span>Fully automated MLOps improving CSAT from <strong className="text-text-primary">32% → 74%</strong></span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />
-                  <span><strong className="text-text-primary">Ph.D. in Information Technology</strong> with machine-learning research focus</span>
+                  <span>Introduced <strong className="text-text-primary">AI Agents, CI/CD, and modern ML practices</strong> to the team</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />
+                  <span>My strength: designing AI systems that balance <strong className="text-text-primary">accuracy, latency, cost, and maintainability</strong></span>
                 </li>
               </ul>
             </div>
@@ -58,13 +63,27 @@ export function Hero() {
               ))}
             </div>
 
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
               <Button size="lg" asChild className="shadow-[0_18px_50px_rgba(59,130,246,0.18)]">
-                <a href="#projects">View case studies</a>
+                <a href={SOCIAL_LINKS.resume}>Resume</a>
               </Button>
               <Button
                 size="lg"
                 variant="secondary"
+                onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Case Studies
+              </Button>
+              <Button
+                size="lg"
+                variant="secondary"
+                asChild
+              >
+                <Link href="/blog">Blog</Link>
+              </Button>
+              <Button
+                size="lg"
+                variant="ghost"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 Contact
@@ -87,8 +106,18 @@ export function Hero() {
                   className="h-16 w-16 rounded-xl object-cover"
                 />
                 <div>
-                  <p className="text-sm uppercase tracking-[0.14em] text-accent">Current Role</p>
-                  <p className="text-text-primary font-semibold">Senior ML Engineer | Senior Data Scientist</p>
+                  <p className="text-sm uppercase tracking-[0.14em] text-accent">Production AI Leadership</p>
+                  <p className="text-text-primary font-semibold">Senior ML Engineer / Data Scientist</p>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between border-b border-border pb-5">
+                <div>
+                  <p className="text-sm uppercase tracking-[0.2em] text-accent">Current Focus</p>
+                  <p className="mt-2 text-xl font-semibold text-text-primary">LLM, RAG, AI Agents, MLOps & LLMOps</p>
+                </div>
+                <div className="rounded-full border border-accent/25 bg-accent/10 px-3 py-1 text-sm text-accent">
+                  Production
                 </div>
               </div>
 
@@ -97,16 +126,29 @@ export function Hero() {
                   <div className="text-4xl font-bold text-text-primary">13+</div>
                   <div className="mt-2 text-sm uppercase tracking-[0.15em] text-text-tertiary">Years</div>
                   <p className="mt-3 text-sm leading-6 text-text-secondary">
-                    Software engineering, data analytics, and machine learning.
+                    <b>End-to-end enterprise application delivery</b><br/>
+                    <b>2012-2016:</b> Backend (Java) Engineering → Team Lead <span className="text-text-tertiary">(Enterprise Engineer)</span><br/>
+                    <b>2016-2020:</b> PhD (ML) + Team Leadership <span className="text-text-tertiary">(Research & Leadership)</span><br/>
+                    <b>2020-2022:</b> Enterprise Analytics (Hitachi) <span className="text-text-tertiary">(ML & Backend)</span><br/>
+                    <b>2022-2026:</b> Enterprise AI Systems (Lufthansa Group)
                   </p>
                 </div>
                 <div className="rounded-2xl border border-border bg-surface/80 p-5">
-                  <div className="text-4xl font-bold text-text-primary">4</div>
-                  <div className="mt-2 text-sm uppercase tracking-[0.15em] text-text-tertiary">Production Systems</div>
+                  <div className="text-4xl font-bold text-text-primary">5</div>
+                  <div className="mt-2 text-sm uppercase tracking-[0.15em] text-text-tertiary">Flagship Systems</div>
                   <p className="mt-3 text-sm leading-6 text-text-secondary">
-                    Search, RAG, MLOps, and forecasting for enterprise operations.
+                    Search, RAG, MLOps, Forecasting, AI Agent. 91% recall@10, 40ms P99 latency.
                   </p>
                 </div>
+              </div>
+
+              <div className="mt-4 rounded-2xl border border-border bg-surface/60 p-5">
+                <p className="text-sm uppercase tracking-[0.2em] text-text-tertiary">Proven Impact</p>
+                <ul className="mt-4 space-y-3 text-sm leading-6 text-text-secondary">
+                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />First scalable AI application serving <strong className="text-text-primary">4 million customers daily</strong></li>
+                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />Fully automated MLOps improving CSAT from <strong className="text-text-primary">32% → 74%</strong></li>
+                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />Introduced <strong className="text-text-primary">AI Agents, CI/CD, and modern ML practices</strong> to the team</li>
+                </ul>
               </div>
             </div>
           </div>

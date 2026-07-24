@@ -4,7 +4,7 @@ import { SITE_CONFIG, SOCIAL_LINKS } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: `Resume | ${SITE_CONFIG.name}`,
-  description: `${SITE_CONFIG.name} - Senior Machine Learning Engineer specializing in enterprise AI systems, semantic search, RAG, and MLOps platforms.`,
+  description: `${SITE_CONFIG.name} - Senior ML Engineer | Senior Data Scientist specializing in enterprise AI systems, semantic search, RAG, and MLOps platforms.`,
 }
 
 export default function ResumePage() {
@@ -17,7 +17,7 @@ export default function ResumePage() {
             ← {SITE_CONFIG.name}
           </Link>
           <h1 className="text-display-3 md:text-display-2 font-bold text-text-primary mb-4">
-            Senior Machine Learning Engineer | Enterprise AI Systems & Platforms
+            Senior ML Engineer | Senior Data Scientist
           </h1>
           <div className="flex flex-wrap gap-4 text-body text-text-secondary">
             <a href={`mailto:${SITE_CONFIG.email}`} className="hover:text-text-primary">
@@ -48,7 +48,7 @@ export default function ResumePage() {
               My background combines <strong className="text-text-primary">14+ years of software engineering</strong>, a <strong className="text-text-primary">Ph.D. in Machine Learning</strong>, and extensive hands-on experience building AI systems on <strong className="text-text-primary">Azure</strong> and <strong className="text-text-primary">Databricks</strong>. I enjoy turning ambiguous business requirements into measurable, production-ready AI solutions.
             </p>
             <p className="text-text-primary font-semibold">
-              <strong>Current Focus:</strong> Semantic Search • Retrieval-Augmented Generation (RAG) • Agentic AI • Enterprise MLOps • AI Platform Engineering
+              <strong>Current Focus:</strong> LLM • RAG • AI Agents • Semantic Search • MLOps & LLMOps • AI Platform Engineering
             </p>
           </div>
         </section>
@@ -67,7 +67,7 @@ export default function ResumePage() {
               <tbody>
                 <tr className="border-b border-border">
                   <td className="p-4 text-body-lg text-text-primary font-medium">Enterprise Semantic Search Platform</td>
-                  <td className="p-4 text-body text-text-secondary"><strong className="text-text-primary">109% lift in search relevance</strong>, recall improved from <strong className="text-text-primary">50% to 75%+</strong>, <strong className="text-text-primary">67% lower latency (6s → 2s)</strong>, 18% fewer support calls</td>
+                  <td className="p-4 text-body text-text-secondary"><strong className="text-text-primary">110% satisfaction improvement (42% → 90%)</strong>, achieved <strong className="text-text-primary">91% recall@10</strong>, <strong className="text-text-primary">99.3% latency reduction (6s → 40ms P99)</strong>, €420K annual savings (18% fewer support calls)</td>
                 </tr>
                 <tr className="border-b border-border">
                   <td className="p-4 text-body-lg text-text-primary font-medium">Enterprise RAG Customer Support Assistant</td>
@@ -96,49 +96,89 @@ export default function ResumePage() {
           <div className="mb-10">
             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
               <div>
-                <h3 className="text-heading-2 font-bold text-text-primary">Senior Machine Learning Engineer / Senior Data Scientist</h3>
+                <h3 className="text-heading-2 font-bold text-text-primary">Senior ML Engineer | Senior Data Scientist</h3>
                 <p className="text-body-lg text-accent font-semibold mt-1">Eurowings Digital GmbH (Lufthansa Group)</p>
               </div>
-              <p className="text-body text-text-tertiary mt-2 md:mt-0">Feb 2022 – Present | Europe (Remote)</p>
+              <p className="text-body text-text-tertiary mt-2 md:mt-0">July 2022 – Present | Europe (Remote)</p>
             </div>
             <ul className="space-y-3 text-body text-text-secondary">
               <li className="flex items-start">
                 <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
-                <span>Designed and implemented an <strong className="text-text-primary">enterprise semantic search platform</strong> using hybrid retrieval (BM25 + vector search), query understanding, multilingual processing, and LLM-assisted ranking to improve customer search experiences.</span>
+                <span>Led end-to-end <strong className="text-text-primary">machine learning initiatives</strong> across aviation and e-commerce domains.</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
-                <span>Built a <strong className="text-text-primary">confidence-scoring framework</strong> combining similarity thresholds, score-gap heuristics, metadata validation, and keyword overlap to reduce false-positive retrievals in vector search.</span>
+                <span>Designed <strong className="text-text-primary">scalable ML pipelines</strong> from data ingestion to production deployment.</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
-                <span>Achieved <strong className="text-text-primary">109% lift in search relevance</strong>, improved recall from <strong className="text-text-primary">50% to 75%+</strong>, reduced latency from <strong className="text-text-primary">6 seconds to under 2 seconds (67% improvement)</strong>, contributing to 18% fewer support calls.</span>
+                <span>Developed <strong className="text-text-primary">AI and LLM-powered solutions</strong> for forecasting, personalization, recommendation engines, and intelligent search systems.</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
-                <span>Designed and deployed a <strong className="text-text-primary">Retrieval-Augmented Generation (RAG) customer support assistant</strong> with citation-backed responses, retrieval validation, and confidence-based fallback mechanisms to improve customer self-service.</span>
+                <span>Architected <strong className="text-text-primary">time-series forecasting, regression, and XGBoost models</strong> for business planning and optimization.</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
-                <span>Built reusable <strong className="text-text-primary">MLOps pipelines</strong> on Azure Databricks using MLflow, Unity Catalog, and CI/CD, standardizing model training, deployment, governance, and monitoring across multiple ML initiatives.</span>
+                <span>Built <strong className="text-text-primary">Retrieval-Augmented Generation (RAG) solutions</strong> for context-aware search experiences.</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
-                <span>Developed automated forecasting and personalization pipelines using ensemble machine learning models (XGBoost, Prophet, Random Forest), improving planning efficiency and campaign targeting.</span>
+                <span>Developed <strong className="text-text-primary">AI agents and virtual assistants</strong> for customer support and enterprise knowledge management.</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
-                <span>Collaborated with product managers, software engineers, UX teams, and business stakeholders to deliver AI solutions from problem definition through architecture, deployment, monitoring, and continuous improvement.</span>
+                <span>Implemented <strong className="text-text-primary">MLOps and LLMOps pipelines</strong> using Azure Databricks and cloud-native technologies.</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
-                <span>Regularly evaluated trade-offs between <strong className="text-text-primary">retrieval quality, latency, operational cost, explainability, and maintainability</strong> while designing enterprise AI systems.</span>
+                <span>Defined AI strategy and served as <strong className="text-text-primary">technical lead for customer-facing AI initiatives</strong>.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
+                <span>Represented the organization in <strong className="text-text-primary">aviation-focused hackathons and conferences</strong>.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
+                <span>Optimized production AI systems through <strong className="text-text-primary">monitoring, observability, and performance tuning</strong>.</span>
               </li>
             </ul>
+            
+            <div className="mt-4 rounded-lg border border-border bg-surface/40 p-4">
+              <p className="text-sm font-semibold text-accent uppercase tracking-wider mb-3">Impact & Achievements</p>
+              <ul className="space-y-2 text-body-sm text-text-secondary">
+                <li className="flex items-start">
+                  <span className="mr-2 mt-1.5 h-1 w-1 rounded-full bg-accent flex-shrink-0"></span>
+                  <span>Improved key business KPIs (CSAT, AOV) by <strong className="text-text-primary">15–30%</strong> through machine learning solutions</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 mt-1.5 h-1 w-1 rounded-full bg-accent flex-shrink-0"></span>
+                  <span>Increased forecast accuracy by over <strong className="text-text-primary">20%</strong></span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 mt-1.5 h-1 w-1 rounded-full bg-accent flex-shrink-0"></span>
+                  <span>Improved conversion rates by <strong className="text-text-primary">10–25%</strong> through personalization and recommendation systems</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 mt-1.5 h-1 w-1 rounded-full bg-accent flex-shrink-0"></span>
+                  <span>Reduced manual operational effort by up to <strong className="text-text-primary">60%</strong> through ML(LLM)Ops automation</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 mt-1.5 h-1 w-1 rounded-full bg-accent flex-shrink-0"></span>
+                  <span>Reduced inference latency by <strong className="text-text-primary">25%</strong> through model optimization and infrastructure scaling</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 mt-1.5 h-1 w-1 rounded-full bg-accent flex-shrink-0"></span>
+                  <span>Improved user engagement, personalization, and revenue through <strong className="text-text-primary">multi-agent AI architectures</strong></span>
+                </li>
+              </ul>
+            </div>
+
             <div className="mt-4">
               <p className="text-sm font-semibold text-text-tertiary uppercase tracking-wider mb-2">Technologies</p>
               <p className="text-body text-text-secondary">
-                Azure OpenAI • Azure Databricks • MLflow • Unity Catalog • Feature Store • Python • LlamaIndex • LangChain • Hybrid Search • Vector Search • Azure AI Search • Kubernetes
+                <strong className="text-text-primary">Frameworks:</strong> PySpark • PyTorch • Scikit-learn • NLTK • SpaCy • Theano • MLflow • Git • Docker • Kubernetes<br/>
+                <strong className="text-text-primary">Cloud & DevOps:</strong> Azure Databricks • Microsoft Azure • Azure AI Search • Azure Container Apps • AWS EC2 • AWS SageMaker • CI/CD Pipelines • MLOps • LLMOps
               </p>
             </div>
           </div>
@@ -150,7 +190,7 @@ export default function ResumePage() {
                 <h3 className="text-heading-2 font-bold text-text-primary">Senior Consultant (SC2)</h3>
                 <p className="text-body-lg text-accent font-semibold mt-1">Hitachi Vantara (Hitachi Data Systems)</p>
               </div>
-              <p className="text-body text-text-tertiary mt-2 md:mt-0">July 2020 – Jan 2022 | Pune, India</p>
+              <p className="text-body text-text-tertiary mt-2 md:mt-0">July 2020 – June 2022 | Pune, India</p>
             </div>
             <ul className="space-y-3 text-body text-text-secondary">
               <li className="flex items-start">
@@ -181,7 +221,7 @@ export default function ResumePage() {
                 <h3 className="text-heading-2 font-bold text-text-primary">Team Lead</h3>
                 <p className="text-body-lg text-accent font-semibold mt-1">Relevance Lab</p>
               </div>
-              <p className="text-body text-text-tertiary mt-2 md:mt-0">Apr 2016 – July 2020 | Bangalore, India</p>
+              <p className="text-body text-text-tertiary mt-2 md:mt-0">April 2016 – July 2020 | Bangalore, India</p>
             </div>
             <ul className="space-y-3 text-body text-text-secondary">
               <li className="flex items-start">
@@ -212,7 +252,7 @@ export default function ResumePage() {
                 <h3 className="text-heading-2 font-bold text-text-primary">Associate Technology L2</h3>
                 <p className="text-body-lg text-accent font-semibold mt-1">Sapient</p>
               </div>
-              <p className="text-body text-text-tertiary mt-2 md:mt-0">Sept 2014 – Apr 2016 | Bangalore, India</p>
+              <p className="text-body text-text-tertiary mt-2 md:mt-0">September 2014 – April 2016 | Bangalore, India</p>
             </div>
             <ul className="space-y-3 text-body text-text-secondary">
               <li className="flex items-start">
@@ -243,7 +283,7 @@ export default function ResumePage() {
                 <h3 className="text-heading-2 font-bold text-text-primary">Programmer Analyst</h3>
                 <p className="text-body-lg text-accent font-semibold mt-1">Cognizant</p>
               </div>
-              <p className="text-body text-text-tertiary mt-2 md:mt-0">Dec 2012 – Aug 2014 | Chennai, India</p>
+              <p className="text-body text-text-tertiary mt-2 md:mt-0">December 2012 – August 2014 | Chennai, India</p>
             </div>
             <ul className="space-y-3 text-body text-text-secondary">
               <li className="flex items-start">

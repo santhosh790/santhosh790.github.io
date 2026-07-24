@@ -1,5 +1,6 @@
 import React from 'react'
 import { Section, SectionHeader, SectionTitle, SectionSubtitle } from '@/components/ui/Section'
+import { LEADERSHIP_HIGHLIGHTS } from '@/lib/constants'
 
 interface TimelineRole {
   title: string
@@ -26,8 +27,8 @@ const CAREER_TIMELINE: TimelineEntry[] = [
         title: 'Senior ML Engineer | Senior Data Scientist',
         period: 'July 2022 – Present',
         description:
-          'Led development of enterprise AI systems including semantic search, RAG chatbots, MLOps platform, and forecasting pipelines. Technical lead for AI initiatives involving cross-functional teams (Product, Engineering, Support). Architected and deployed production systems serving millions of customers.',
-        tags: ['Semantic Search', 'RAG', 'MLOps', 'Azure Databricks', 'GPT-4', 'Team Leadership'],
+          'Led end-to-end development of 5 production AI systems across aviation and e-commerce domains. Architected semantic search (91% recall@10, 40ms P99), RAG solutions, MLOps/LLMOps pipelines, and AI agents. Achieved €420K annual savings through 18% support call reduction and 110% search satisfaction improvement. Technical lead for AI strategy and cross-functional delivery.',
+        tags: ['Semantic Search', 'RAG', 'AI Agents', 'MLOps & LLMOps', 'Azure Databricks', 'Team Leadership'],
         current: true,
       },
     ],
@@ -39,7 +40,7 @@ const CAREER_TIMELINE: TimelineEntry[] = [
     roles: [
       {
         title: 'Senior Consultant (SC2)',
-        period: 'July 2020 – Jun 2022',
+        period: 'July 2020 – June 2022',
         description:
           'Contributed to enterprise data analytics initiatives. Led cross-functional teams across analytics and machine learning models. Successfully delivered enterprise analytics solutions for global customers and led multidisciplinary teams to complete projects within scope and timelines.',
         tags: ['Java', 'AWS', 'AWS EC2', 'Scikit-learn', 'ML Models', 'AEM', 'Team Leadership'],
@@ -53,7 +54,7 @@ const CAREER_TIMELINE: TimelineEntry[] = [
     roles: [
       {
         title: 'Team Lead',
-        period: 'Apr 2016 – July 2020',
+        period: 'April 2016 – July 2020',
         description:
           'Led a team of 10+ professionals across project planning, execution, and delivery. Coordinated stakeholder communication and mentored team members. Ensured quality standards and delivery timelines were consistently met.',
         tags: ['Java', 'Kafka', 'Docker', 'AWS', 'AWS S3', 'AWS EC2', 'Team Leadership'],
@@ -67,7 +68,7 @@ const CAREER_TIMELINE: TimelineEntry[] = [
     roles: [
       {
         title: 'Associate Technology L2',
-        period: 'Sept 2014 – Apr 2016',
+        period: 'September 2014 – April 2016',
         description:
           'Developed web applications using Adobe Experience Manager (AEM). Built backend services with Java and front-end solutions with JavaScript, HTML, and CSS. Contributed to enterprise digital experience platform delivery.',
         tags: ['Java', 'AWS', 'AEM', 'JavaScript', 'HTML', 'CSS'],
@@ -81,7 +82,7 @@ const CAREER_TIMELINE: TimelineEntry[] = [
     roles: [
       {
         title: 'Programmer Analyst',
-        period: 'Dec 2012 – Aug 2014',
+        period: 'December 2012 – August 2014',
         description:
           'Developed enterprise Java applications and web services. Built scalable backend systems and contributed to full-stack development projects for global enterprise clients.',
         tags: ['Java', 'AWS', 'AEM', 'Web Services'],
@@ -116,6 +117,45 @@ export function CareerTimeline() {
           13+ years building ML systems: from research to enterprise AI platforms at scale
         </SectionSubtitle>
       </SectionHeader>
+
+      {/* Leadership Highlights Grid */}
+      <div className="grid gap-6 md:grid-cols-3 mb-12">
+        {LEADERSHIP_HIGHLIGHTS.map((item, index) => (
+          <article
+            key={item.title}
+            className="animate-fade-in rounded-[1.5rem] border border-border bg-surface/70 p-6"
+            style={{ animationDelay: `${index * 0.1}s` }}
+          >
+            <h3 className="text-heading-3 font-semibold text-text-primary">{item.title}</h3>
+            <p className="mt-2 text-sm uppercase tracking-[0.12em] text-accent">{item.detail}</p>
+            <p className="mt-4 text-text-secondary leading-7">{item.description}</p>
+          </article>
+        ))}
+      </div>
+
+      {/* Key Leadership Responsibilities */}
+      <div className="mx-auto max-w-4xl mb-16">
+        <h3 className="text-heading-2 font-bold text-text-primary mb-6 text-center">
+          Key Leadership Responsibilities
+        </h3>
+        <ul className="space-y-4">
+          {[
+            'Technical lead for enterprise AI initiatives involving product managers, software engineers, data scientists, and business stakeholders.',
+            'Designed end-to-end AI architectures from requirements gathering through production deployment and monitoring.',
+            'Standardized reusable MLOps patterns using Azure Databricks and MLflow to accelerate ML delivery.',
+            'Collaborated across engineering and business teams to translate customer problems into production AI solutions.',
+            'Mentored engineers on production ML practices, evaluation methodologies, and system design.',
+          ].map((item, index) => (
+            <li
+              key={index}
+              className="flex items-start rounded-2xl border border-border bg-surface/60 p-5 transition-all hover:border-accent/30 hover:bg-surface/80"
+            >
+              <span className="mr-4 mt-1 h-2 w-2 flex-shrink-0 rounded-full bg-accent"></span>
+              <span className="text-body-lg text-text-secondary">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <div className="mx-auto max-w-5xl">
         {CAREER_TIMELINE.map((entry, index) => (

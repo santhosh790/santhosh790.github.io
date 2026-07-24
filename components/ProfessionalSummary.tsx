@@ -14,9 +14,11 @@ export function ProfessionalSummary() {
 
       <div className="mx-auto max-w-4xl">
         <div className="rounded-2xl border border-border bg-surface/60 p-8 md:p-10">
+          {/* Quick Facts - Always Visible */}
           <div className="mb-6 rounded-xl border border-accent/20 bg-accent/5 p-6">
             <div className="flex items-center gap-3 mb-4">
-              <h3 className="text-heading-3 font-bold text-text-primary">Profile</h3>
+              <span className="text-2xl">⚡</span>
+              <h3 className="text-heading-3 font-bold text-text-primary">Quick Facts</h3>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
               <div>
@@ -28,8 +30,8 @@ export function ProfessionalSummary() {
                 <div className="text-xs text-text-tertiary mt-1">Machine Learning</div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-accent">4</div>
-                <div className="text-xs text-text-tertiary mt-1">Production Systems</div>
+                <div className="text-2xl font-bold text-accent">5</div>
+                <div className="text-xs text-text-tertiary mt-1">AI Systems</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-accent">Azure</div>
@@ -39,11 +41,11 @@ export function ProfessionalSummary() {
           </div>
 
           <p className="text-heading-3 text-text-primary font-semibold leading-relaxed mb-4">
-            I build and operate enterprise AI systems for search, customer support, and ML delivery.
+            Most AI prototypes never become successful products. My passion is turning innovative ideas into reliable production systems.
           </p>
 
           <p className="text-body-lg text-text-secondary leading-relaxed">
-            <strong className="text-text-primary">Specialization:</strong> Semantic Search • RAG • MLOps • Forecasting • AI Platforms
+            <strong className="text-text-primary">Specialization:</strong> LLM • RAG • AI Agents • Semantic Search • MLOps & LLMOps
           </p>
 
           {isExpanded && (

@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { SITE_CONFIG, SOCIAL_LINKS } from '@/lib/constants'
 
 export function Footer() {
@@ -38,12 +39,20 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  href="#blog"
+                <Link
+                  href="/blog"
                   className="text-text-secondary hover:text-text-primary transition-colors text-sm"
                 >
                   Blog
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="text-text-secondary hover:text-text-primary transition-colors text-sm"
+                >
+                  About
+                </Link>
               </li>
               <li>
                 <a
@@ -56,10 +65,10 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Social Links */}
+          {/* Connect & Academic */}
           <div>
             <h4 className="text-text-primary font-semibold text-sm mb-3">Connect</h4>
-            <div className="flex gap-4">
+            <div className="flex gap-4 mb-6">
               <a
                 href={SOCIAL_LINKS.github}
                 target="_blank"
@@ -104,6 +113,14 @@ export function Footer() {
                   <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" />
                 </svg>
               </a>
+            </div>
+            <div className="mt-4">
+              <Link
+                href="/credentials"
+                className="text-text-tertiary hover:text-text-primary transition-colors text-xs"
+              >
+                Publications & Speaking →
+              </Link>
             </div>
           </div>
         </div>
