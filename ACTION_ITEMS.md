@@ -44,14 +44,16 @@ Blog posts and thought leadership content
 
 ---
 
-## 🚀 REMAINING WORK - What Still Needs Your Input
+## 🚀 REMAINING WORK - Portfolio Refinement
+
+> **Source data status:** The verified ownership, team scope, business context, impact metrics, technologies, architecture, technical decisions, and production challenges for all 5 flagship systems are already recorded in `lib/constants.ts` (added in commit `0d1fa95`). Do not request these details again. Remaining items below are presentation and depth improvements based on that recorded data.
 
 ### PHASE 2A: Enhanced Project Details (8-12 hours)
 
-#### 1. Add "Engineering Decisions" Sections (4h)
-**File:** `lib/constants.ts` - Update each of 5 FEATURED_PROJECTS
+#### 1. Expand "Technical Decisions" Sections (4h)
+**File:** `lib/constants.ts` - Refine the existing `technicalDecisions` content for each of 5 FEATURED_PROJECTS
 
-Each project needs a detailed `engineeringDecisions` array explaining WHY specific technologies were chosen:
+Each project already has a `technicalDecisions` array. Expand it only where verified detail is available, explaining WHY specific technologies were chosen:
 
 **Example for AI Search project:**
 ```typescript
@@ -75,7 +77,7 @@ engineeringDecisions: [
 ]
 ```
 
-**TODO:** Write similar sections for:
+**Refinement targets:**
 - Enterprise RAG project
 - MLOps Platform project  
 - Forecasting Platform project
@@ -85,8 +87,10 @@ engineeringDecisions: [
 
 ---
 
-#### 2. Add "Production Challenges" Details (4h)
-**File:** `lib/constants.ts` - Expand each project's `productionChallenges`
+#### 2. Expand "Production Challenges" Details (4h)
+**File:** `lib/constants.ts` - Refine the existing `productionChallenges` content
+
+Production challenge summaries are already recorded for all 5 systems. Convert them into richer structured entries only when the underlying facts are verified; do not invent missing metrics.
 
 Each project should detail:
 - **Latency challenges:** What caused slowness? How did you fix it?

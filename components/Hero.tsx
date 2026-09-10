@@ -106,7 +106,7 @@ export function Hero() {
                   className="h-16 w-16 rounded-xl object-cover"
                 />
                 <div>
-                  <p className="text-sm uppercase tracking-[0.14em] text-accent">Production AI Leadership</p>
+                  <p className="text-sm uppercase tracking-[0.14em] text-accent">Production AI Hands-on & Leadership</p>
                   <p className="text-text-primary font-semibold">Senior ML Engineer / Data Scientist</p>
                 </div>
               </div>

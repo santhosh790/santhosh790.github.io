@@ -1,10 +1,13 @@
 import React from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Section, SectionHeader, SectionTitle, SectionSubtitle } from '@/components/ui/Section'
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
 import { Button } from '@/components/ui/Button'
 import { FEATURED_PROJECTS } from '@/lib/constants'
+import aiSearchImpacts from '@/assets/images/ai_search_impacts.png'
+import semanticSearchFront from '@/assets/images/semantic_search_front.png'
 
 // Category icons mapping
 const CATEGORY_ICONS = {
@@ -66,14 +69,6 @@ export function FeaturedProjects() {
               <CardDescription className="mt-2">{project.tagline}</CardDescription>
               </div>
 
-              {project.category === 'flagship' && (
-                <div className="mt-6 rounded-2xl border border-accent/20 bg-accent/5 px-5 py-4 lg:mt-0 lg:w-[18rem]">
-                  <p className="text-xs uppercase tracking-[0.18em] text-accent flex items-center gap-2">
-                    <span>💡</span> Why it matters
-                  </p>
-                  <p className="mt-3 text-sm leading-6 text-text-secondary">{project.businessProblem}</p>
-                </div>
-              )}
             </CardHeader>
 
             <CardContent className={project.category === 'flagship' ? 'lg:grid lg:grid-cols-[1.2fr_0.8fr] lg:gap-8' : ''}>
@@ -84,6 +79,15 @@ export function FeaturedProjects() {
                   <h4 className="text-xs font-semibold text-text-tertiary uppercase mb-2 tracking-[0.16em] flex items-center gap-2">
                     <span>🏗️</span> Architecture Highlights
                   </h4>
+                  {project.id === 'ai-search' && (
+                    <Image
+                      src={semanticSearchFront}
+                      alt="Preview of the AI-powered semantic search platform"
+                      width={1536}
+                      height={1024}
+                      className="mb-4 h-auto w-full rounded-xl border border-border object-contain"
+                    />
+                  )}
                   <ul className="space-y-2">
                     {project.architecture.slice(0, 3).map((item) => (
                       <li key={item} className="text-sm text-text-secondary flex items-start leading-6">
@@ -108,15 +112,34 @@ export function FeaturedProjects() {
                   <h4 className="text-xs font-semibold text-accent uppercase mb-3 tracking-[0.16em] flex items-center gap-2">
                     <span>📈</span> Impact
                   </h4>
-                  <ul className="space-y-3">
-                    {project.impact.map((item, i) => (
-                      <li key={i} className="text-sm text-text-primary font-medium flex items-start leading-6">
-                        <span className="text-accent mr-2 text-lg">✓</span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
+                  {project.id === 'ai-search' ? (
+                    <Image
+                      src={aiSearchImpacts}
+                      alt="AI-powered semantic search impact metrics"
+                      width={1548}
+                      height={404}
+                      className="h-auto w-full rounded-xl border border-accent/10 object-contain"
+                    />
+                  ) : (
+                    <ul className="space-y-3">
+                      {project.impact.map((item, i) => (
+                        <li key={i} className="text-sm text-text-primary font-medium flex items-start leading-6">
+                          <span className="text-accent mr-2 text-lg">✓</span>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
+
+                {project.category === 'flagship' && (
+                  <div className="mt-4 rounded-2xl border border-accent/20 bg-accent/5 px-4 py-4">
+                    <p className="text-xs uppercase tracking-[0.18em] text-accent flex items-center gap-2">
+                      <span>💡</span> Why it matters
+                    </p>
+                    <p className="mt-3 text-sm leading-6 text-text-secondary">{project.businessProblem}</p>
+                  </div>
+                )}
 
                 {project.category !== 'flagship' && (
                   <div className="mt-4 rounded-2xl border border-border bg-background/60 px-4 py-4">

@@ -1,10 +1,38 @@
 import type { Metadata } from 'next'
+import Image, { type StaticImageData } from 'next/image'
 import Link from 'next/link'
 import { SITE_CONFIG, SOCIAL_LINKS } from '@/lib/constants'
+import cognizantLogo from '@/assets/images/cognizant_logo.jpeg'
+import eurowingsLogo from '@/assets/images/eurowings_logo.jpeg'
+import hitachiVantaraLogo from '@/assets/images/hitachi_vantara_logo.png'
+import relevanceLabLogo from '@/assets/images/relevancelab_logo.jpeg'
+import sapientLogo from '@/assets/images/sapient_logo.jpeg'
 
 export const metadata: Metadata = {
   title: `Resume | ${SITE_CONFIG.name}`,
   description: `${SITE_CONFIG.name} - Senior ML Engineer | Senior Data Scientist specializing in enterprise AI systems, semantic search, RAG, and MLOps platforms.`,
+}
+
+const COMPANY_LOGOS: Record<string, StaticImageData> = {
+  eurowings: eurowingsLogo,
+  hitachi: hitachiVantaraLogo,
+  relevanceLab: relevanceLabLogo,
+  sapient: sapientLogo,
+  cognizant: cognizantLogo,
+}
+
+function ExperienceMarker({ company, current = false }: { company: keyof typeof COMPANY_LOGOS; current?: boolean }) {
+  return (
+    <div className={`absolute -left-[4.75rem] top-0 flex h-14 w-14 items-center justify-center rounded-2xl border-2 bg-background p-2 shadow-lg ${current ? 'border-accent shadow-accent/20' : 'border-border'}`}>
+      <Image
+        src={COMPANY_LOGOS[company]}
+        alt=""
+        width={40}
+        height={40}
+        className="h-9 w-9 rounded-xl object-contain"
+      />
+    </div>
+  )
 }
 
 export default function ResumePage() {
@@ -93,7 +121,10 @@ export default function ResumePage() {
           <h2 className="text-display-3 font-bold text-text-primary mb-8">Professional Experience</h2>
 
           {/* Current Role */}
-          <div className="mb-10">
+          <div className="relative ml-6 border-l-2 border-accent/25 pl-12">
+          {/* Current Role */}
+          <div className="relative mb-10 rounded-2xl border border-accent/25 bg-accent/5 p-6 shadow-sm">
+            <ExperienceMarker company="eurowings" current />
             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
               <div>
                 <h3 className="text-heading-2 font-bold text-text-primary">Senior ML Engineer | Senior Data Scientist</h3>
@@ -184,7 +215,8 @@ export default function ResumePage() {
           </div>
 
           {/* Hitachi Vantara */}
-          <div className="mb-10">
+          <div className="relative mb-10 rounded-2xl border border-border bg-surface/40 p-6">
+            <ExperienceMarker company="hitachi" />
             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
               <div>
                 <h3 className="text-heading-2 font-bold text-text-primary">Senior Consultant (SC2)</h3>
@@ -215,7 +247,8 @@ export default function ResumePage() {
           </div>
 
           {/* Relevance Lab */}
-          <div className="mb-10">
+          <div className="relative mb-10 rounded-2xl border border-border bg-surface/40 p-6">
+            <ExperienceMarker company="relevanceLab" />
             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
               <div>
                 <h3 className="text-heading-2 font-bold text-text-primary">Team Lead</h3>
@@ -246,7 +279,8 @@ export default function ResumePage() {
           </div>
 
           {/* Sapient */}
-          <div className="mb-10">
+          <div className="relative mb-10 rounded-2xl border border-border bg-surface/40 p-6">
+            <ExperienceMarker company="sapient" />
             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
               <div>
                 <h3 className="text-heading-2 font-bold text-text-primary">Associate Technology L2</h3>
@@ -277,7 +311,8 @@ export default function ResumePage() {
           </div>
 
           {/* Cognizant */}
-          <div className="mb-10">
+          <div className="relative mb-10 rounded-2xl border border-border bg-surface/40 p-6">
+            <ExperienceMarker company="cognizant" />
             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
               <div>
                 <h3 className="text-heading-2 font-bold text-text-primary">Programmer Analyst</h3>
@@ -305,6 +340,7 @@ export default function ResumePage() {
                 Java • AWS • Adobe Experience Manager (AEM) • Web Services
               </p>
             </div>
+          </div>
           </div>
         </section>
 

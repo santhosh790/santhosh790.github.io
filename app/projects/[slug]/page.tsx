@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { FEATURED_PROJECTS, OPEN_SOURCE_PROJECTS, SITE_CONFIG } from '@/lib/constants'
 import { ArchitectureDiagram } from '@/components/ArchitectureDiagram'
+import semanticSearchArchitecture from '@/assets/images/semantic_search_arch.png'
 
 type ProjectSlug = (typeof FEATURED_PROJECTS)[number]['slug'] | (typeof OPEN_SOURCE_PROJECTS)[number]['slug']
 
@@ -23,8 +25,9 @@ export function generateStaticParams() {
   ]
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const project = getProject(params.slug)
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params
+  const project = getProject(slug)
 
   if (!project) {
     return {
@@ -38,8 +41,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   }
 }
 
-export default function ProjectPage({ params }: { params: { slug: ProjectSlug } }) {
-  const project = getProject(params.slug)
+export default async function ProjectPage({ params }: { params: Promise<{ slug: ProjectSlug }> }) {
+  const { slug } = await params
+  const project = getProject(slug)
 
   if (!project) {
     notFound()
@@ -105,13 +109,27 @@ export default function ProjectPage({ params }: { params: { slug: ProjectSlug } 
                 ))}
               </ul>
               
-              {/* Architecture Diagram */}
-              {'architectureDiagram' in project && project.architectureDiagram && (
-                <ArchitectureDiagram
-                  title={project.architectureDiagram.title}
-                  description={project.architectureDiagram.description}
-                  mermaidCode={project.architectureDiagram.mermaidCode}
-                />
+              {project.slug === 'ai-search' ? (
+                <figure className="mt-6 overflow-hidden rounded-2xl border border-border bg-surface/60 p-3 shadow-sm md:p-5">
+                  <Image
+                    src={semanticSearchArchitecture}
+                    alt="Architecture diagram for the AI-powered semantic search platform"
+                    width={1536}
+                    height={1024}
+                    className="h-auto w-full rounded-xl object-contain"
+                  />
+                  <figcaption className="px-2 pt-3 text-sm text-text-tertiary">
+                    AI-powered semantic search architecture
+                  </figcaption>
+                </figure>
+              ) : (
+                'architectureDiagram' in project && project.architectureDiagram && (
+                  <ArchitectureDiagram
+                    title={project.architectureDiagram.title}
+                    description={project.architectureDiagram.description}
+                    mermaidCode={project.architectureDiagram.mermaidCode}
+                  />
+                )
               )}
             </section>
           )}

@@ -1,6 +1,12 @@
 import React from 'react'
+import Image, { type StaticImageData } from 'next/image'
 import { Section, SectionHeader, SectionTitle, SectionSubtitle } from '@/components/ui/Section'
 import { LEADERSHIP_HIGHLIGHTS } from '@/lib/constants'
+import cognizantLogo from '@/assets/images/cognizant_logo.jpeg'
+import eurowingsLogo from '@/assets/images/eurowings_logo.jpeg'
+import hitachiVantaraLogo from '@/assets/images/hitachi_vantara_logo.png'
+import relevanceLabLogo from '@/assets/images/relevancelab_logo.jpeg'
+import sapientLogo from '@/assets/images/sapient_logo.jpeg'
 
 interface TimelineRole {
   title: string
@@ -91,6 +97,14 @@ const CAREER_TIMELINE: TimelineEntry[] = [
   },
 ]
 
+const COMPANY_LOGOS: Record<string, StaticImageData> = {
+  'Eurowings Digital GmbH': eurowingsLogo,
+  'Hitachi Vantara (Hitachi Data Systems)': hitachiVantaraLogo,
+  'Relevance Lab': relevanceLabLogo,
+  Sapient: sapientLogo,
+  Cognizant: cognizantLogo,
+}
+
 const EDUCATION_TIMELINE = [
   {
     institution: 'Vellore Institute of Technology',
@@ -157,92 +171,67 @@ export function CareerTimeline() {
         </ul>
       </div>
 
-      <div className="mx-auto max-w-5xl">
-        {CAREER_TIMELINE.map((entry, index) => (
-          <div key={index} className="relative">
-            {/* Timeline Line */}
-            {index < CAREER_TIMELINE.length - 1 && (
-              <div className="absolute left-6 top-24 bottom-0 w-0.5 bg-gradient-to-b from-accent/50 to-border" />
-            )}
+      <div className="mx-auto max-w-7xl">
+        <div className="overflow-x-auto pb-5 [scrollbar-color:rgb(var(--color-accent))_transparent]">
+          <div className="relative grid min-w-[1060px] grid-cols-5 gap-4 px-1 pt-5">
+            <div className="absolute left-8 right-8 top-[3.25rem] h-px bg-gradient-to-r from-accent via-accent/60 to-border" aria-hidden="true" />
 
-            <div className="relative mb-12 animate-fade-in" style={{ animationDelay: `${index * 0.15}s` }}>
-              {/* Period Badge */}
-              <div className="mb-4 flex items-center gap-4">
-                <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border-2 border-accent bg-background shadow-lg">
-                  {entry.period === 'Current' ? (
-                    <span className="text-xl">⭐</span>
-                  ) : (
-                    <span className="text-sm font-bold text-accent">{entry.period.split(' ')[0]}</span>
-                  )}
-                </div>
-                <div>
-                  <h3 className="text-heading-3 font-bold text-text-primary">{entry.period}</h3>
-                  {entry.period === 'Current' && (
-                    <p className="text-sm text-accent font-medium">Ongoing</p>
-                  )}
-                </div>
-              </div>
+            {CAREER_TIMELINE.map((entry, index) => {
+              const role = entry.roles[0]
 
-              {/* Company Card */}
-              <div className="ml-16 rounded-2xl border border-border bg-gradient-to-br from-surface to-background p-8 shadow-md hover:border-accent/30 hover:shadow-xl transition-all">
-                {/* Company Header */}
-                <div className="mb-6 flex items-start justify-between">
-                  <div>
-                    <div className="flex items-center gap-3 mb-2">
-                      <h4 className="text-heading-2 font-bold text-text-primary">{entry.company}</h4>
+              return (
+                <article
+                  key={entry.company}
+                  className="relative animate-fade-in"
+                  style={{ animationDelay: `${index * 0.12}s` }}
+                >
+                  <div className="relative z-10 mb-7 flex items-center gap-3">
+                    <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border-2 bg-background text-sm font-bold shadow-lg ${role.current ? 'border-accent text-accent' : 'border-border-light text-text-secondary'}`}>
+                      <Image
+                        src={COMPANY_LOGOS[entry.company]}
+                        alt={`${entry.company} logo`}
+                        width={36}
+                        height={36}
+                        className="h-8 w-8 rounded-full object-contain"
+                      />
                     </div>
-                    <div className="flex items-center gap-2 text-sm text-text-tertiary">
-                      <span>📍</span>
-                      <span>{entry.location}</span>
+                    <span className={`text-sm font-semibold ${role.current ? 'text-accent' : 'text-text-tertiary'}`}>
+                      {entry.period}
+                    </span>
+                  </div>
+
+                  <div className={`flex min-h-[22rem] flex-col rounded-2xl border p-5 transition-all hover:-translate-y-1 hover:border-accent/40 hover:shadow-xl ${role.current ? 'border-accent/40 bg-accent/10' : 'border-border bg-gradient-to-br from-surface to-background'}`}>
+                    <div className="mb-5">
+                      <p className="text-xs font-semibold uppercase tracking-[0.14em] text-text-tertiary">{entry.location}</p>
+                      <h4 className="mt-2 text-lg font-bold leading-tight text-text-primary">{entry.company}</h4>
+                    </div>
+
+                    {role.current && (
+                      <span className="mb-4 w-fit rounded-full bg-accent/20 px-2.5 py-1 text-xs font-semibold text-accent">
+                        Current role
+                      </span>
+                    )}
+
+                    <h5 className="text-base font-semibold leading-snug text-text-primary">{role.title}</h5>
+                    <p className="mt-2 text-xs text-text-tertiary">{role.period}</p>
+                    <p className="mt-4 flex-1 text-sm leading-6 text-text-secondary">{role.description}</p>
+
+                    <div className="mt-5 flex flex-wrap gap-1.5">
+                      {role.tags.slice(0, 4).map((tag) => (
+                        <span key={tag} className="rounded-full border border-border bg-surface/70 px-2 py-1 text-[11px] text-text-secondary">
+                          {tag}
+                        </span>
+                      ))}
                     </div>
                   </div>
-                </div>
-
-                {/* Roles */}
-                <div className="space-y-6">
-                  {entry.roles.map((role, roleIndex) => (
-                    <div key={roleIndex} className="relative">
-                      {roleIndex > 0 && <div className="mb-6 border-t border-border" />}
-                      
-                      <div className="flex items-start gap-4 mb-3">
-                        {role.current && (
-                          <span className="rounded-full bg-accent/20 px-3 py-1 text-xs font-semibold text-accent">
-                            Current Role
-                          </span>
-                        )}
-                      </div>
-
-                      <h5 className="text-heading-3 font-semibold text-text-primary mb-2">
-                        {role.title}
-                      </h5>
-                      
-                      <p className="text-sm text-text-tertiary mb-4 flex items-center gap-2">
-                        <span>📅</span>
-                        <span>{role.period}</span>
-                      </p>
-
-                      <p className="text-body text-text-secondary leading-relaxed mb-5">
-                        {role.description}
-                      </p>
-
-                      {/* Tech Tags */}
-                      <div className="flex flex-wrap gap-2">
-                        {role.tags.map((tag) => (
-                          <span
-                            key={tag}
-                            className="rounded-full border border-border bg-surface px-3 py-1 text-xs text-text-secondary hover:border-accent/50 hover:bg-accent/5 transition-colors"
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
+                </article>
+              )
+            })}
           </div>
-        ))}
+        </div>
+        <p className="mt-2 text-center text-xs uppercase tracking-[0.16em] text-text-tertiary md:hidden">
+          Scroll horizontally to explore the timeline
+        </p>
       </div>
 
       {/* Summary Stats */}
