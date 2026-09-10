@@ -11,7 +11,7 @@
     "type-check": "./scripts/with-node22.sh tsc --noEmit"
   },
   "dependencies": {
-    "next": "^15.5.20",
+    "next": "^15.5.25",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "framer-motion": "^11.15.0",
