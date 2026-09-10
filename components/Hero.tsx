@@ -145,9 +145,9 @@ export function Hero() {
               <div className="mt-4 rounded-2xl border border-border bg-surface/60 p-5">
                 <p className="text-sm uppercase tracking-[0.2em] text-text-tertiary">Proven Impact</p>
                 <ul className="mt-4 space-y-3 text-sm leading-6 text-text-secondary">
-                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />First scalable AI application serving <strong className="text-text-primary">4 million customers daily</strong></li>
-                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />Fully automated MLOps improving CSAT from <strong className="text-text-primary">32% → 74%</strong></li>
-                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" />Introduced <strong className="text-text-primary">AI Agents, CI/CD, and modern ML practices</strong> to the team</li>
+                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" /><span>First scalable AI application serving <strong className="text-text-primary">4 million customers daily</strong></span></li>
+                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" /><span>Fully automated MLOps improving CSAT from <strong className="text-text-primary">32% → 74%</strong></span></li>
+                  <li className="flex items-start"><span className="mr-3 mt-2 h-2 w-2 rounded-full bg-accent flex-shrink-0" /><span>Introduced <strong className="text-text-primary">AI Agents, CI/CD, and modern ML practices</strong> to the team</span></li>
                 </ul>
               </div>
             </div>
