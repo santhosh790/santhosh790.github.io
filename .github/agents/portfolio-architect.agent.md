@@ -220,6 +220,12 @@ Every project page MUST follow this structure:
 6. **Production Challenges** - Monitoring, evaluation, drift detection, failure handling, security
 7. **Impact** - Measurable outcomes (with real numbers when available)
 
+Each case study should be written in a professional, engineering-focused tone, emphasizing production experience and system design thinking. It should answer the question: "Can this person own complex systems?". Specifically, check if every project cover the questions:
+• What is built, i.e., what problem was solved
+• What I owned or decided in the project
+• Tradeoffs I wrestled with in them
+• What I learned out of the project.
+
 ### Blog Integration
 
 **Migration**: User has existing blog posts in Jekyll (_posts/) - will be provided one by one when ready to migrate
