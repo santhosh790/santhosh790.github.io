@@ -11,9 +11,9 @@ export default function HomePage() {
     <>
       <Hero />
       <FeaturedProjects />
+      <TechStack />
       <CareerTimeline />
       <OpenSourceProjects />
-      <TechStack />
       <BlogPreview />
       <Contact />
     </>

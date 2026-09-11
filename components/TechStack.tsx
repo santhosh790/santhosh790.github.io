@@ -7,7 +7,7 @@ export function TechStack() {
   return (
     <Section id="skills">
       <SectionHeader>
-        <SectionTitle>Tech Stack</SectionTitle>
+        <SectionTitle>AI Engineering Skillsets</SectionTitle>
         <SectionSubtitle>
           Capabilities organized by system responsibility rather than a flat keyword list.
         </SectionSubtitle>

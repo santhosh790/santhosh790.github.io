@@ -62,10 +62,10 @@ export function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {NAVIGATION.map((item) => (
-              item.href === '/blog' ? (
+              item.href.startsWith('/') ? (
                 <Link
                   key={item.name}
-                  href="/blog"
+                  href={item.href}
                   className="text-text-secondary hover:text-text-primary transition-colors text-sm font-medium"
                 >
                   {item.name}
@@ -120,10 +120,10 @@ export function Navigation() {
                 <ThemeToggle />
               </div>
               {NAVIGATION.map((item) => (
-                item.href === '/blog' ? (
+                item.href.startsWith('/') ? (
                   <Link
                     key={item.name}
-                    href="/blog"
+                    href={item.href}
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="text-text-secondary hover:text-text-primary transition-colors text-left py-2"
                   >
