@@ -26,7 +26,7 @@ interface TimelineEntry {
 const CAREER_TIMELINE: TimelineEntry[] = [
   {
     company: 'Eurowings Digital GmbH',
-    location: 'Europe',
+    location: 'Cologne, Germany',
     period: 'Current',
     roles: [
       {
@@ -50,6 +50,20 @@ const CAREER_TIMELINE: TimelineEntry[] = [
         description:
           'Contributed to enterprise data analytics initiatives. Led cross-functional teams across analytics and machine learning models. Successfully delivered enterprise analytics solutions for global customers and led multidisciplinary teams to complete projects within scope and timelines.',
         tags: ['Java', 'AWS', 'AWS EC2', 'Scikit-learn', 'ML Models', 'AEM', 'Team Leadership'],
+      },
+    ],
+  },
+  {
+    company: 'Vellore Institute of Technology',
+    location: 'Vellore, India',
+    period: '2014 – 2020',
+    roles: [
+      {
+        title: 'Research Scholar | Doctoral Researcher',
+        period: 'July 2014 – February 2020',
+        description:
+          'Conducted doctoral research alongside industry roles. Designed a parallel CNN approach for earlier rumor identification, developed neuro-fuzzy detection and a bio-inspired rumor-confinement strategy, and co-authored peer-reviewed journal publications on the methods and findings.',
+        tags: ['Machine Learning Research', 'Parallel CNN', 'Neuro-Fuzzy', 'Bio-inspired Algorithms'],
       },
     ],
   },
@@ -97,7 +111,7 @@ const CAREER_TIMELINE: TimelineEntry[] = [
   },
 ]
 
-const COMPANY_LOGOS: Record<string, StaticImageData> = {
+const COMPANY_LOGOS: Record<string, StaticImageData | undefined> = {
   'Eurowings Digital GmbH': eurowingsLogo,
   'Hitachi Vantara (Hitachi Data Systems)': hitachiVantaraLogo,
   'Relevance Lab': relevanceLabLogo,
@@ -173,11 +187,12 @@ export function CareerTimeline() {
 
       <div className="mx-auto max-w-7xl">
         <div className="overflow-x-auto pb-5 [scrollbar-color:rgb(var(--color-accent))_transparent]">
-          <div className="relative grid min-w-[1060px] grid-cols-5 gap-4 px-1 pt-5">
+          <div className="relative grid min-w-[1280px] grid-cols-6 gap-4 px-1 pt-5">
             <div className="absolute left-8 right-8 top-[3.25rem] h-px bg-gradient-to-r from-accent via-accent/60 to-border" aria-hidden="true" />
 
             {CAREER_TIMELINE.map((entry, index) => {
               const role = entry.roles[0]
+              const companyLogo = COMPANY_LOGOS[entry.company]
 
               return (
                 <article
@@ -187,13 +202,17 @@ export function CareerTimeline() {
                 >
                   <div className="relative z-10 mb-7 flex items-center gap-3">
                     <div className={`flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full border-2 bg-background text-sm font-bold shadow-lg ${role.current ? 'border-accent text-accent' : 'border-border-light text-text-secondary'}`}>
-                      <Image
-                        src={COMPANY_LOGOS[entry.company]}
-                        alt={`${entry.company} logo`}
-                        width={36}
-                        height={36}
-                        className="h-8 w-8 rounded-full object-contain"
-                      />
+                      {companyLogo ? (
+                        <Image
+                          src={companyLogo}
+                          alt={`${entry.company} logo`}
+                          width={36}
+                          height={36}
+                          className="h-8 w-8 rounded-full object-contain"
+                        />
+                      ) : (
+                        <span aria-label="Vellore Institute of Technology" className="text-xs font-bold">VIT</span>
+                      )}
                     </div>
                     <span className={`text-sm font-semibold ${role.current ? 'text-accent' : 'text-text-tertiary'}`}>
                       {entry.period}

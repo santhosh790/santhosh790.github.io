@@ -110,6 +110,6 @@ scripts/             Local Node version and build helpers
 ## Links
 
 - [GitHub](https://github.com/santhosh790)
-- [LinkedIn](https://www.linkedin.com/in/dr-santhoshkumar-s-9ab69a48/)
+- [LinkedIn](https://www.linkedin.com/in/santhoshkumar-s-ph-d-15574149/)
 - [Google Scholar](https://scholar.google.com/citations?hl=en&user=2U2D8dAAAAAJ)
 - [Substack](https://drsanthosh.substack.com/)

@@ -7,7 +7,7 @@ export const SITE_CONFIG = {
     'I architect enterprise AI systems at scale. I reduce time-to-production from months to days through reusable ML infrastructure, turn research insights into enterprise systems, and own end-to-end delivery from requirements through operations.',
   company: 'Eurowings Digital GmbH',
   currentRole: 'Senior ML Engineer / Data Scientist',
-  location: 'Europe | Remote',
+  location: 'Cologne, Germany',
   email: 'santhoshramuk@gmail.com',
   url: 'https://santhosh790.github.io',
 } as const
@@ -25,7 +25,7 @@ export const CAREER_METRICS = {
 
 export const SOCIAL_LINKS = {
   github: 'https://github.com/santhosh790',
-  linkedin: 'https://www.linkedin.com/in/dr-santhoshkumar-s-9ab69a48/',
+  linkedin: 'https://www.linkedin.com/in/santhoshkumar-s-ph-d-15574149/',
   scholar: 'https://scholar.google.com/citations?hl=en&user=2U2D8dAAAAAJ',
   substack: 'https://drsanthosh.substack.com/',
   resume: '/resume',

@@ -130,7 +130,7 @@ export default function ResumePage() {
                 <h3 className="text-heading-2 font-bold text-text-primary">Senior ML Engineer | Senior Data Scientist</h3>
                 <p className="text-body-lg text-accent font-semibold mt-1">Eurowings Digital GmbH (Lufthansa Group)</p>
               </div>
-              <p className="text-body text-text-tertiary mt-2 md:mt-0">July 2022 – Present | Europe (Remote)</p>
+              <p className="text-body text-text-tertiary mt-2 md:mt-0">July 2022 – Present | Germany</p>
             </div>
             <ul className="space-y-3 text-body text-text-secondary">
               <li className="flex items-start">
@@ -244,6 +244,34 @@ export default function ResumePage() {
                 Java • AWS • AWS EC2 • Scikit-learn • ML Models • Adobe Experience Manager (AEM)
               </p>
             </div>
+          </div>
+
+          {/* Research Scholar */}
+          <div className="relative mb-10 rounded-2xl border border-border bg-surface/40 p-6">
+            <div className="absolute -left-[4.75rem] top-0 flex h-14 w-14 items-center justify-center rounded-2xl border-2 border-border bg-background text-xs font-bold text-accent shadow-lg">
+              VIT
+            </div>
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-3">
+              <div>
+                <h3 className="text-heading-2 font-bold text-text-primary">Research Scholar</h3>
+                <p className="text-body-lg text-accent font-semibold mt-1">Vellore Institute of Technology (VIT)</p>
+              </div>
+              <p className="text-body text-text-tertiary mt-2 md:mt-0">July 2014 – February 2020 | Vellore, India</p>
+            </div>
+            <ul className="space-y-3 text-body text-text-secondary">
+              <li className="flex items-start">
+                <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
+                <span>Designed a <strong className="text-text-primary">parallel CNN approach for earlier rumor identification</strong> in online social networks.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
+                <span>Developed complementary approaches for rumor detection and control, including <strong className="text-text-primary">neuro-fuzzy detection</strong> and a <strong className="text-text-primary">bio-inspired rumor-confinement strategy</strong>.</span>
+              </li>
+              <li className="flex items-start">
+                <span className="mr-3 mt-2 h-1.5 w-1.5 rounded-full bg-accent flex-shrink-0"></span>
+                <span>Co-authored peer-reviewed journal publications documenting the research methods and findings.</span>
+              </li>
+            </ul>
           </div>
 
           {/* Relevance Lab */}
